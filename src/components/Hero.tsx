@@ -28,7 +28,6 @@ export default function Hero() {
 		return () => clearInterval(id);
 	}, []);
 
-	const next = () => setIndex((i) => (i + 1) % heroImages.length);
 	const scrollTo = (id: string) =>
 		document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
 
@@ -51,35 +50,6 @@ export default function Hero() {
 
 			<div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(10,15,31,0.55)_0%,rgba(10,15,31,0.75)_60%,rgba(10,15,31,0.96)_100%)]" />
 			<div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_rgba(201,166,92,0.12),_transparent_60%)]" />
-
-			{/* أزرار وتحكم السلايدر */}
-			<div className="absolute end-5 top-24 z-20 flex items-center gap-2 lg:end-10">
-				<div className="flex items-center gap-1.5">
-					{heroImages.map((_, i) => (
-						<button
-							key={i}
-							onClick={() => setIndex(i)}
-							aria-label={`slide ${i + 1}`}
-							className={`h-1.5 rounded-full transition-all ${
-								i === index
-									? "w-6 bg-gold-400"
-									: "w-1.5 bg-paper/40 hover:bg-paper/70"
-							}`}
-						/>
-					))}
-				</div>
-				<button
-					onClick={next}
-					aria-label="next slide"
-					className="flex h-9 w-9 items-center justify-center rounded-full border border-paper/30 text-paper transition-colors hover:border-gold-400 hover:text-gold-300"
-				>
-					{lang === "ar" ? (
-						<ChevronLeft size={16} />
-					) : (
-						<ChevronRight size={16} />
-					)}
-				</button>
-			</div>
 
 			<div className="relative z-10 mx-auto w-full max-w-7xl px-5 pb-20 pt-40 lg:px-10 lg:pb-28">
 				<motion.div

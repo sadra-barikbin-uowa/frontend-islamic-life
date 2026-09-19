@@ -233,18 +233,6 @@ export default function Navbar() {
 					<div className="hidden min-[1400px]:flex items-center gap-2">
 						{lang === "ar" ? (
 							<>
-								<button
-									onClick={() => setLang("en")}
-									aria-label="toggle language"
-									className={`inline-flex items-center justify-center whitespace-nowrap rounded-full border px-3 py-1.5 text-[13px] font-medium transition-colors ${
-										scrolled
-											? `border-ink-900/15 ${scrolledTextClass}`
-											: "border-paper/50 text-paper"
-									}`}
-								>
-									{t.ui.langToggle}
-								</button>
-
 								{!isSeventhPage ? (
 									<button
 										type="button"
@@ -278,6 +266,18 @@ export default function Navbar() {
 										<span>{t.seventhConference.backToPortal}</span>
 									</button>
 								)}
+
+								<button
+									onClick={() => setLang("en")}
+									aria-label="toggle language"
+									className={`inline-flex items-center justify-center whitespace-nowrap rounded-full border px-3 py-1.5 text-[13px] font-medium transition-colors ${
+										scrolled
+											? `border-ink-900/15 ${scrolledTextClass}`
+											: "border-paper/50 text-paper"
+									}`}
+								>
+									{t.ui.langToggle}
+								</button>
 							</>
 						) : (
 							<>
