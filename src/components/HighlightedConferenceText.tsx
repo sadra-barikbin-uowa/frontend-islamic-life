@@ -12,7 +12,7 @@ export default function HighlightedConferenceText({
 }: HighlightedConferenceTextProps) {
 	const { lang } = useApp();
 	const phrase =
-		lang === "ar" ? "المؤتمر الإسلام حياة" : "Islamic Life Conference";
+		lang === "ar" ? "مؤتمر الإسلام حياة" : "Islamic Life Conference";
 	const parts = text.split(phrase);
 
 	return (

@@ -14,7 +14,7 @@ export default function ConferenceName({
 	if (lang === "ar") {
 		return (
 			<span className={className}>
-				<span>المؤتمر </span>
+				<span>مؤتمر </span>
 				<span className={greenClassName}>الإسلام حياة</span>
 			</span>
 		);

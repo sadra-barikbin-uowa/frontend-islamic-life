@@ -20,6 +20,9 @@ interface AppContextValue {
 	aboutWebsiteOpen: boolean;
 	openAboutWebsite: () => void;
 	closeAboutWebsite: () => void;
+	countdownOpen: boolean;
+	openCountdown: () => void;
+	closeCountdown: () => void;
 	t: (typeof content)[Lang];
 }
 
@@ -39,6 +42,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
 	});
 	const [submissionOpen, setSubmissionOpen] = useState(false);
 	const [aboutWebsiteOpen, setAboutWebsiteOpen] = useState(false);
+	const [countdownOpen, setCountdownOpen] = useState(false);
 
 	useEffect(() => {
 		document.documentElement.lang = lang;
@@ -58,6 +62,8 @@ export function AppProvider({ children }: { children: ReactNode }) {
 	const closeSubmission = () => setSubmissionOpen(false);
 	const openAboutWebsite = () => setAboutWebsiteOpen(true);
 	const closeAboutWebsite = () => setAboutWebsiteOpen(false);
+	const openCountdown = () => setCountdownOpen(true);
+	const closeCountdown = () => setCountdownOpen(false);
 
 	return (
 		<AppContext.Provider
@@ -72,6 +78,9 @@ export function AppProvider({ children }: { children: ReactNode }) {
 				aboutWebsiteOpen,
 				openAboutWebsite,
 				closeAboutWebsite,
+				countdownOpen,
+				openCountdown,
+				closeCountdown,
 				t: content[lang],
 			}}
 		>

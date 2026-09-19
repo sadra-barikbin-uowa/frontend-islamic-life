@@ -10,6 +10,7 @@ import {
 } from "lucide-react";
 import { useApp } from "../context/AppContext";
 import ConferenceName from "./ConferenceName";
+import ConferenceLogo from "./ConferenceLogo";
 
 const socials = [
 	{
@@ -46,9 +47,7 @@ export default function Footer() {
 				<div className="grid gap-10 border-b border-paper/10 pb-12 md:grid-cols-[1.2fr_0.8fr_1fr] md:gap-14">
 					<div>
 						<div className="flex items-center gap-3">
-							<span className="flex h-10 w-10 items-center justify-center rounded-full border border-gold-400/50 font-display text-lg text-gold-400">
-								W
-							</span>
+							<ConferenceLogo className="h-12 w-12 shrink-0" />
 							<span className="text-sm font-medium leading-tight">
 								{t.meta.university}
 								<span className="block text-xs text-ink-200">

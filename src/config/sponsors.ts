@@ -1,3 +1,6 @@
+import shrineLogo from '../../شعار العتبة.png'
+import universityLogo from '../../شعار وارث.png'
+
 /**
  * الجهات الداعمة (Sponsors) — تظهر في قسم "الجهات الداعمة" بالموقع.
  *
@@ -11,21 +14,24 @@
  * استبدل هذين الملفين بالشعارين الحقيقيين بنفس الاسمين وسيتحدث الموقع تلقائيًا.
  */
 export interface Sponsor {
-  name: string
+  nameAr: string
+  nameEn: string
   url?: string
   logo?: string
 }
 
 export const sponsors: Sponsor[] = [
   {
-    name: 'العتبة الحسينية المقدسة',
+    nameAr: 'العتبة الحسينية المقدسة',
+    nameEn: 'Al-Hussainiya Holy Shrine',
     url: 'https://imamhussain.org/arabic',
-    logo: '/شعار العتبة.png', // ⬅️ استبدل هذا الملف بالشعار الحقيقي
+    logo: shrineLogo,
   },
   {
-    name: 'جامعة وارث الأنبياء',
+    nameAr: 'جامعة وارث الأنبياء',
+    nameEn: 'University of Warith Al-Anbiyaa',
     url: 'https://uowa-new.uowa.edu.iq/arabic',
-    logo: '/شعار وارث.png', // ⬅️ استبدل هذا الملف بالشعار الحقيقي
+    logo: universityLogo,
   },
   // أضف بقية الجهات الداعمة هنا بنفس الطريقة عند الحاجة مستقبلاً.
 ]

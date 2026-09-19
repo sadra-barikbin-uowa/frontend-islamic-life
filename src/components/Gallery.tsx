@@ -119,11 +119,13 @@ export default function Gallery() {
 							))}
 						</motion.div>
 					</motion.div>
+				</div>
+				<div className="mt-5 flex items-center justify-center gap-3">
 					<button
 						type="button"
 						onClick={showPrevious}
 						aria-label={t.gallery.previous}
-						className="absolute start-0 top-1/2 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-paper/90 text-slate-ink shadow-lg transition-all hover:scale-105 hover:bg-paper dark:bg-ink-900/90 dark:text-paper dark:hover:bg-ink-900 sm:h-12 sm:w-12"
+						className="flex h-11 w-11 items-center justify-center rounded-full bg-paper/90 text-slate-ink shadow-lg transition-all hover:scale-105 hover:bg-paper dark:bg-ink-900/90 dark:text-paper dark:hover:bg-ink-900 sm:h-12 sm:w-12"
 					>
 						<ChevronLeft size={22} strokeWidth={2.2} />
 					</button>
@@ -131,7 +133,7 @@ export default function Gallery() {
 						type="button"
 						onClick={showNext}
 						aria-label={t.gallery.next}
-						className="absolute end-0 top-1/2 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-paper/90 text-slate-ink shadow-lg transition-all hover:scale-105 hover:bg-paper dark:bg-ink-900/90 dark:text-paper dark:hover:bg-ink-900 sm:h-12 sm:w-12"
+						className="flex h-11 w-11 items-center justify-center rounded-full bg-paper/90 text-slate-ink shadow-lg transition-all hover:scale-105 hover:bg-paper dark:bg-ink-900/90 dark:text-paper dark:hover:bg-ink-900 sm:h-12 sm:w-12"
 					>
 						<ChevronRight size={22} strokeWidth={2.2} />
 					</button>

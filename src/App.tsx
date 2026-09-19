@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import Preloader from "./components/Preloader";
 import ResearchSubmissionModal from "./components/ResearchSubmissionModal";
 import AboutWebsiteModal from "./components/AboutWebsiteModal";
+import CountdownModal from "./components/CountdownModal";
 import ScrollToTop from "./components/ScrollToTop";
 import HomePage from "./pages/HomePage";
 import SeventhConferencePage from "./pages/SeventhConferencePage";
@@ -29,6 +30,7 @@ export default function App() {
 			<Preloader show={loading} />
 			<ResearchSubmissionModal />
 			<AboutWebsiteModal />
+			<CountdownModal />
 			<Routes>
 				<Route path="/" element={<HomePage />} />
 				<Route path="/seventh-conference" element={<SeventhConferencePage />} />

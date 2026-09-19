@@ -4,8 +4,8 @@ export const content = {
   ar: {
     dir: 'rtl' as 'rtl' | 'ltr',
     meta: {
-      confShort: 'المؤتمر الإسلام حياة',
-      confName: 'المؤتمر الإسلام حياة',
+      confShort: 'مؤتمر الإسلام حياة',
+      confName: 'مؤتمر الإسلام حياة',
       university: 'جامعة وارث الأنبياء',
       college: 'كلية العلوم الإسلامية',
     },
@@ -17,25 +17,25 @@ export const content = {
     },
     nav: {
       links: [
-        { id: 'about', label: 'عن المؤتمر' },
+        { id: 'about', label: 'عن مؤتمر' },
         { id: 'faq', label: 'أسئلة عامة' },
         { id: 'contact', label: 'تواصل' },
       ],
       previousVersions: [
-        'المؤتمر الإسلام حياة الدولي الأول',
-        'المؤتمر الإسلام حياة الدولي الثاني',
-        'المؤتمر الإسلام حياة الدولي الثالث',
-        'المؤتمر الإسلام حياة الدولي الرابع',
-        'المؤتمر الإسلام حياة الدولي الخامس',
-        'المؤتمر الإسلام حياة الدولي السادس',
+        'مؤتمر الإسلام حياة الدولي الأول',
+        'مؤتمر الإسلام حياة الدولي الثاني',
+        'مؤتمر الإسلام حياة الدولي الثالث',
+        'مؤتمر الإسلام حياة الدولي الرابع',
+        'مؤتمر الإسلام حياة الدولي الخامس',
+        'مؤتمر الإسلام حياة الدولي السادس',
       ],
       previousVersionsLabel: 'النسخ السابقة',
       submit: 'قدّم بحثك',
       archive: 'الأرشيف',
     },
     seventhConference: {
-      editionBadge: 'المؤتمر الدولي السابع — الدورة الحالية',
-      editionTitle: 'المؤتمر الدولي السابع',
+      editionBadge: 'مؤتمر الدولي السابع — الدورة الحالية',
+      editionTitle: 'مؤتمر الدولي السابع',
       themeTitle: 'الهوية الإسلامية والتحديات المعاصرة',
       eyebrow: 'كلية العلوم الإسلامية — جامعة وارث الأنبياء (ع)',
       subtitle:
@@ -45,7 +45,7 @@ export const content = {
       ctaCommittees: 'اللجان المشرفة',
       dateLine: '2026 – 1448 · كربلاء المقدسة، جامعة وارث الأنبياء (ع)',
       currentVersionBadge: 'النسخة السابعة',
-      backToPortal: 'المؤتمر العام',
+      backToPortal: 'مؤتمر العام',
       navLinks: [
         { id: 'seventh-hero', label: 'الرئيسية' },
         { id: 'about', label: 'عن الدورة السابعة' },
@@ -57,15 +57,15 @@ export const content = {
         { id: 'contact', label: 'تواصل' },
       ],
       aboutLead:
-        'يأتي المؤتمر الدولي السابع تحت شعار "الهوية الإسلامية والتحديات المعاصرة" ليناقش التحديات الفكرية والثقافية التي تواجه الهوية الإسلامية في ظل العولمة، وتأكيد الهوية كمنهج رباني ونمط سلوكي وتصوري أصيل يحفظ كيان الفرد والمجتمع.',
+        'يأتي مؤتمر الدولي السابع تحت شعار "الهوية الإسلامية والتحديات المعاصرة" ليناقش التحديات الفكرية والثقافية التي تواجه الهوية الإسلامية في ظل العولمة، وتأكيد الهوية كمنهج رباني ونمط سلوكي وتصوري أصيل يحفظ كيان الفرد والمجتمع.',
     },
     hero: {
       eyebrow: 'كلية العلوم الإسلامية — جامعة وارث الأنبياء',
-      title: 'المؤتمر الإسلام حياة',
+      title: 'مؤتمر الإسلام حياة',
       subtitle:
         'مؤتمر فكري وثقافي وأكاديمي ومعرفي يناقش قضايا العصر، ودور الفكر والقيم والتعليم والمجتمع الإسلام في بناء الإنسان وتنمية الحياة.',
       ctaPrimary: 'قدّم بحثك',
-      ctaSecondary: 'تعرّف على المؤتمر',
+      ctaSecondary: 'تعرّف على مؤتمر',
       dateLine: '2026 – 1448 · كربلاء المقدسة، جامعة وارث الأنبياء',
     },
     info: [
@@ -75,16 +75,16 @@ export const content = {
       { label: 'الراعي الرسمي', value: 'العتبة الحسينية المقدسة\nجامعة وارث الأنبياء' },
     ],
     about: {
-      title: 'عن المؤتمر',
+      title: 'عن مؤتمر',
       lead:
-        'المؤتمر الإسلام حياة هو ملتقى فكري وثقافي وأكاديمي ومعرفي يجمع الباحثين والأكاديميين لمناقشة القضايا المعاصرة، واستكشاف دور الفكر الإسلام وقيمه في التعليم والمجتمع والتنمية الإنسانية، وبناء حوار علمي يربط المعرفة بواقع الإنسان وحاجاته.',
+        'مؤتمر الإسلام حياة هو ملتقى فكري وثقافي وأكاديمي ومعرفي يجمع الباحثين والأكاديميين لمناقشة القضايا المعاصرة، واستكشاف دور الفكر الإسلام وقيمه في التعليم والمجتمع والتنمية الإنسانية، وبناء حوار علمي يربط المعرفة بواقع الإنسان وحاجاته.',
       partnersTitle: 'بالتعاون مع',
       cooperation: {
         items: ['العتبة الحسينية المقدسة', 'جامعة وارث الأنبياء (ع)', 'كلية العلوم الإسلامية'],
       },
       vision: {
         title: 'الرؤية',
-        text: 'أن يكون المؤتمر منبرًا علميًا رائدًا يرسّخ الهوية الإسلامية بوصفها منهج حياة، ويؤسس لحوار حضاري رصين بين الجامعات الإسلامية ونظيراتها حول العالم.',
+        text: 'أن يكون مؤتمر منبرًا علميًا رائدًا يرسّخ الهوية الإسلامية بوصفها منهج حياة، ويؤسس لحوار حضاري رصين بين الجامعات الإسلامية ونظيراتها حول العالم.',
       },
       mission: {
         title: 'الرسالة',
@@ -92,12 +92,12 @@ export const content = {
       },
       goals: {
         title: 'الشعار',
-        text: '"الهوية الإسلامية والتحديات المعاصرة" — شعار الدورة الحالية من المؤتمر الدولي السابع، ضمن المسار العام للمؤتمر الإسلام حياة.',
+        text: '"الهوية الإسلامية والتحديات المعاصرة" — شعار الدورة الحالية من مؤتمر الدولي السابع، ضمن المسار العام لمؤتمر الإسلام حياة.',
       },
     },
     objectives: {
-      title: 'أهداف المؤتمر',
-      subtitle: 'محاور توجّه رسالة المؤتمر في ترسيخ الهوية الإسلامية ومواجهة تحديات العصر',
+      title: 'أهداف مؤتمر',
+      subtitle: 'محاور توجّه رسالة مؤتمر في ترسيخ الهوية الإسلامية ومواجهة تحديات العصر',
       items: [
         {
           n: '01',
@@ -132,12 +132,12 @@ export const content = {
       ],
     },
     rules: {
-      title: 'ضوابط المشاركة في المؤتمر',
-      subtitle: 'يُشترط في البحث المقدَّم للمشاركة في المؤتمر ما يأتي',
+      title: 'ضوابط المشاركة في مؤتمر',
+      subtitle: 'يُشترط في البحث المقدَّم للمشاركة في مؤتمر ما يأتي',
       items: [
         'أن يتسم البحث بالأصالة الفكرية، والأمانة العلمية، واحترام مناهج البحث، وقواعد النظر السليم، مع سلامة اللغة ووضوح الفكرة.',
         'أن يتميز البحث بمعالجة جديدة لموضوعه، أو يقدم نتائج بحثية مضافة في حقل الدراسات.',
-        'أن يندرج البحث المقدَّم ضمن أحد محاور المؤتمر، وكل بحث خارج المحاور يُستبعد.',
+        'أن يندرج البحث المقدَّم ضمن أحد محاور مؤتمر، وكل بحث خارج المحاور يُستبعد.',
         'ألا يكون البحث قد سبق نشره، أو المشاركة به في مؤتمر سابق.',
         'يجب أن يكون البحث مراعيًا لقواعد البحث العلمي، مع ضرورة الإحالة إلى المصادر الأصلية.',
         'ألا يقل البحث عن خمس عشرة صفحة ولا يتجاوز ثلاثين صفحة.',
@@ -146,18 +146,18 @@ export const content = {
     },
     faq: {
       title: 'أسئلة عامة',
-      subtitle: 'إجابات عن أكثر الأسئلة تكرارًا حول المؤتمر',
+      subtitle: 'إجابات عن أكثر الأسئلة تكرارًا حول مؤتمر',
       items: [
-        { q: 'أين يُقام المؤتمر؟', a: 'يُقام المؤتمر في مقر جامعة وارث الأنبياء بمدينة كربلاء المقدسة، برعاية العتبة الحسينية المقدسة.' },
+        { q: 'أين يُقام مؤتمر؟', a: 'يُقام مؤتمر في مقر جامعة وارث الأنبياء بمدينة كربلاء المقدسة، برعاية العتبة الحسينية المقدسة.' },
         { q: 'متى آخر موعد لاستلام ملخصات البحوث؟', a: 'يُعلن الموعد النهائي لاستلام الملخصات عبر القنوات الرسمية للمؤتمر، ويُنصح المشاركون بالتقديم في أقرب وقت ممكن.' },
-        { q: 'متى آخر موعد لاستلام البحوث بصيغتها النهائية؟', a: 'يُحدَّد هذا الموعد لاحقًا، ويُعلن عبر موقع المؤتمر ووسائل التواصل الرسمية.' },
-        { q: 'متى يُعقد المؤتمر؟', a: 'يُعلن موعد انعقاد المؤتمر رسميًا عبر الموقع والقنوات الرسمية للجامعة والعتبة الحسينية المقدسة.' },
-        { q: 'أين تُنشر البحوث؟', a: 'تُنشر البحوث المقبولة بعد استكمال إجراءات التحكيم العلمي ضمن الإصدارات العلمية الخاصة بالمؤتمر.' },
+        { q: 'متى آخر موعد لاستلام البحوث بصيغتها النهائية؟', a: 'يُحدَّد هذا الموعد لاحقًا، ويُعلن عبر موقع مؤتمر ووسائل التواصل الرسمية.' },
+        { q: 'متى يُعقد مؤتمر؟', a: 'يُعلن موعد انعقاد مؤتمر رسميًا عبر الموقع والقنوات الرسمية للجامعة والعتبة الحسينية المقدسة.' },
+        { q: 'أين تُنشر البحوث؟', a: 'تُنشر البحوث المقبولة بعد استكمال إجراءات التحكيم العلمي ضمن الإصدارات العلمية الخاصة بمؤتمر.' },
       ],
     },
     committees: {
       title: 'اللجان',
-      subtitle: 'الهيكل التنظيمي والعلمي المشرف على أعمال المؤتمر',
+      subtitle: 'الهيكل التنظيمي والعلمي المشرف على أعمال مؤتمر',
       groups: [
         {
           title: 'اللجنة العلمية',
@@ -252,13 +252,13 @@ export const content = {
       title: 'نبذة حول الموقع',
       close: 'إغلاق',
       paragraphs: [
-        'هذا الموقع هو المنصة الإلكترونية الرسمية للمؤتمر الإسلام حياة، ويهدف إلى تقديم معلومات شاملة حول المؤتمر وفعالياته ومحاوره وبرامجه، وإتاحة المجال للباحثين والمهتمين للتعرف على أهداف المؤتمر والمشاركة في تقديم البحوث والدراسات العلمية.',
-        'يسعى الموقع إلى توفير تجربة رقمية سهلة وحديثة للتعريف بالمؤتمر، واستعراض المعلومات والفعاليات، والتواصل مع المشاركين والباحثين.',
+        'هذا الموقع هو المنصة الإلكترونية الرسمية لمؤتمر الإسلام حياة، ويهدف إلى تقديم معلومات شاملة حول مؤتمر وفعالياته ومحاوره وبرامجه، وإتاحة المجال للباحثين والمهتمين للتعرف على أهداف مؤتمر والمشاركة في تقديم البحوث والدراسات العلمية.',
+        'يسعى الموقع إلى توفير تجربة رقمية سهلة وحديثة للتعريف بمؤتمر، واستعراض المعلومات والفعاليات، والتواصل مع المشاركين والباحثين.',
       ],
     },
     gallery: {
       title: 'معرض الصور',
-      subtitle: 'لقطات من فعاليات الدورات السابقة للمؤتمر الإسلام حياة',
+      subtitle: 'لقطات من فعاليات الدورات السابقة لمؤتمر الإسلام حياة',
       previous: 'السابق',
       next: 'التالي',
       close: 'إغلاق',
@@ -270,7 +270,7 @@ export const content = {
     venue: {
       title: 'مكان الانعقاد',
       address: 'جامعة وارث الأنبياء، كربلاء المقدسة، العراق',
-      text: 'يُقام المؤتمر برعاية العتبة الحسينية المقدسة في مقر جامعة وارث الأنبياء بمدينة كربلاء المقدسة.',
+      text: 'يُقام مؤتمر برعاية العتبة الحسينية المقدسة في مقر جامعة وارث الأنبياء بمدينة كربلاء المقدسة.',
     },
     contact: {
       title: 'تواصل معنا',
@@ -364,7 +364,7 @@ export const content = {
       { label: 'Date', value: '2022 CE – 1444 AH' },
       { label: 'Venue', value: 'Karbala, Iraq' },
       { label: 'Host', value: 'College of Islamic Sciences' },
-      { label: 'Official Sponsor', value: 'Holy Shrine of Imam Hussain\nWarith Al-Anbiyaa University' },
+      { label: 'Official Sponsor', value: 'Al-Hussainiya Holy Shrine\nUniversity of Warith Al-Anbiyaa' },
     ],
     about: {
       title: 'About the Conference',
@@ -416,10 +416,10 @@ export const content = {
       title: 'General FAQ',
       subtitle: 'Answers to the most frequently asked questions about the conference',
       items: [
-        { q: 'Where is the conference held?', a: 'The conference is held at Warith Al-Anbiyaa University in the holy city of Karbala, under the patronage of the Holy Shrine of Imam Hussain.' },
+        { q: 'Where is the conference held?', a: 'The conference is held at the University of Warith Al-Anbiyaa in the holy city of Karbala, under the patronage of the Al-Hussainiya Holy Shrine.' },
         { q: 'What is the deadline for abstract submission?', a: 'The final deadline for abstracts will be announced through the conference\u2019s official channels; early submission is recommended.' },
         { q: 'What is the deadline for the final paper?', a: 'This deadline will be set and announced later via the conference website and official channels.' },
-        { q: 'When is the conference held?', a: 'The conference date is officially announced through the website and the official channels of the university and the Holy Shrine of Imam Hussain.' },
+        { q: 'When is the conference held?', a: 'The conference date is officially announced through the website and the official channels of the university and the Al-Hussainiya Holy Shrine.' },
         { q: 'Where are the papers published?', a: 'Accepted papers are published, after the peer-review process is completed, in the conference\u2019s scholarly publications.' },
       ],
     },
@@ -469,9 +469,9 @@ export const content = {
             { name: 'Ahmed Hameed Abbas Al-Shukri', org: 'Warith Al-Anbiyaa University — College of Islamic Sciences', role: 'Member' },
             { name: 'Hussein Alaa Matouk', org: 'Warith Al-Anbiyaa University — Head, Registry Department', role: 'Member' },
             { name: 'Mustafa Abdul-Karim Al-Ghalibi', org: 'Warith Al-Anbiyaa University — College of Islamic Sciences', role: 'Member' },
-            { name: 'Abdul-Amir Al-Mansouri', org: 'Holy Shrine of Imam Hussain — Head, Relations Dept.', role: 'Member' },
-            { name: 'Ihsan Abdul-Amir Khalif', org: 'Holy Shrine of Imam Hussain — Secretary-General\u2019s Office Manager', role: 'Member' },
-            { name: 'Mohammed Hamza Al-Kinani', org: 'Holy Shrine of Imam Hussain — HR Development Dept.', role: 'Member' },
+            { name: 'Abdul-Amir Al-Mansouri', org: 'Al-Hussainiya Holy Shrine — Head, Relations Dept.', role: 'Member' },
+            { name: 'Ihsan Abdul-Amir Khalif', org: 'Al-Hussainiya Holy Shrine — Secretary-General\u2019s Office Manager', role: 'Member' },
+            { name: 'Mohammed Hamza Al-Kinani', org: 'Al-Hussainiya Holy Shrine — HR Development Dept.', role: 'Member' },
           ],
         },
         {
@@ -482,13 +482,13 @@ export const content = {
             { name: 'Dr. Abdullah Ali Sakr', org: 'Warith Al-Anbiyaa University — College of Administration & Economics', role: 'Member' },
             { name: 'Ali Kareem Abdul-Raheem', org: 'Warith Al-Anbiyaa University — College of Islamic Sciences', role: 'Member' },
             { name: 'Ammar Abdul-Ilah', org: 'Warith Al-Anbiyaa University — Office Manager to the President', role: 'Member' },
-            { name: 'Walaa Shaker Mahmoud', org: 'Holy Shrine of Imam Hussain — Head, Media Dept.', role: 'Member' },
-            { name: 'Adnan Qahtan Kadhim', org: 'Holy Shrine of Imam Hussain — Head, Hospitality Dept.', role: 'Member' },
-            { name: 'Ali Fouad Al-Fadhli', org: 'Holy Shrine of Imam Hussain — Deputy Head, Fleet Dept.', role: 'Member' },
-            { name: 'Hasanein Mohammed Al-Anbari', org: 'Holy Shrine of Imam Hussain — Deputy Head, Development Dept.', role: 'Member' },
-            { name: 'Arshad Shaker Al-Owaidi', org: 'Holy Shrine of Imam Hussain — HR Development Dept.', role: 'Member' },
-            { name: 'Hasanein Mohammed Ali Al-Wazni', org: 'Holy Shrine of Imam Hussain — HR Development Dept.', role: 'Member' },
-            { name: 'Bahaa Abdul-Sattar Al-Barghouthi', org: 'Holy Shrine of Imam Hussain — HR Development Dept.', role: 'Member' },
+            { name: 'Walaa Shaker Mahmoud', org: 'Al-Hussainiya Holy Shrine — Head, Media Dept.', role: 'Member' },
+            { name: 'Adnan Qahtan Kadhim', org: 'Al-Hussainiya Holy Shrine — Head, Hospitality Dept.', role: 'Member' },
+            { name: 'Ali Fouad Al-Fadhli', org: 'Al-Hussainiya Holy Shrine — Deputy Head, Fleet Dept.', role: 'Member' },
+            { name: 'Hasanein Mohammed Al-Anbari', org: 'Al-Hussainiya Holy Shrine — Deputy Head, Development Dept.', role: 'Member' },
+            { name: 'Arshad Shaker Al-Owaidi', org: 'Al-Hussainiya Holy Shrine — HR Development Dept.', role: 'Member' },
+            { name: 'Hasanein Mohammed Ali Al-Wazni', org: 'Al-Hussainiya Holy Shrine — HR Development Dept.', role: 'Member' },
+            { name: 'Bahaa Abdul-Sattar Al-Barghouthi', org: 'Al-Hussainiya Holy Shrine — HR Development Dept.', role: 'Member' },
           ],
         },
       ],
@@ -537,18 +537,18 @@ export const content = {
     },
     venue: {
       title: 'Venue',
-      address: 'Warith Al-Anbiyaa University, Karbala, Iraq',
-      text: 'Held under the patronage of the Holy Shrine of Imam Hussain, at Warith Al-Anbiyaa University in the holy city of Karbala.',
+      address: 'University of Warith Al-Anbiyaa, Karbala, Iraq',
+      text: 'Held under the patronage of the Al-Hussainiya Holy Shrine, at the University of Warith Al-Anbiyaa in the holy city of Karbala.',
     },
     contact: {
       title: 'Contact Us',
       subtitle: 'For any inquiries about submission or participation, we would love to hear from you',
       info: {
-        email: 'cois@uowa.edu.iq',        phone: '',        address: 'College of Islamic Sciences, Warith Al-Anbiyaa University, Karbala, Iraq',
+        email: 'cois@uowa.edu.iq',        phone: '',        address: 'College of Islamic Sciences, University of Warith Al-Anbiyaa, Karbala, Iraq',
       },
     },
     footer: {
-      text: 'College of Islamic Sciences — Warith Al-Anbiyaa University, under the patronage of the Holy Shrine of Imam Hussain',
+      text: 'College of Islamic Sciences — University of Warith Al-Anbiyaa, under the patronage of the Al-Hussainiya Holy Shrine',
       linksTitle: 'Quick Links',
       contactTitle: 'Contact Us',
       rights: 'All rights reserved',

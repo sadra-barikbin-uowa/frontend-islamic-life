@@ -3,9 +3,18 @@ import { AnimatePresence, motion } from "framer-motion";
 import { Menu, X, Moon, Sun, ChevronDown } from "lucide-react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useApp } from "../context/AppContext";
+import ConferenceLogo from "./ConferenceLogo";
 
 export default function Navbar() {
-	const { t, lang, setLang, theme, toggleTheme, openSubmission } = useApp();
+	const {
+		t,
+		lang,
+		setLang,
+		theme,
+		toggleTheme,
+		openSubmission,
+		openCountdown,
+	} = useApp();
 	const [scrolled, setScrolled] = useState(false);
 	const [open, setOpen] = useState(false);
 	const [previousVersionsOpen, setPreviousVersionsOpen] = useState(false);
@@ -94,6 +103,11 @@ export default function Navbar() {
 		}
 	};
 
+	const handleCountdownOpen = () => {
+		openCountdown();
+		window.dispatchEvent(new Event("countdown-start"));
+	};
+
 	return (
 		<header
 			ref={navbarRef}
@@ -105,23 +119,15 @@ export default function Navbar() {
 		>
 			<div
 				dir={t.dir}
-				className="mx-auto flex w-full max-w-[90rem] items-center gap-4 px-3 py-3 sm:px-5 sm:py-4 lg:gap-6 lg:px-8 min-[1400px]:gap-7"
+				className="mx-auto flex w-full max-w-[90rem] items-center gap-3 px-3 py-3 sm:gap-4 sm:px-5 sm:py-4 lg:gap-5 lg:px-8"
 			>
 				<button
 					onClick={handleBrandClick}
-					className="flex min-w-0 shrink-0 items-center gap-2.5 text-start sm:gap-3 min-[1400px]:w-[14rem]"
+					className="flex min-w-0 shrink-0 items-center gap-2.5 whitespace-nowrap text-start sm:gap-3 min-[1400px]:w-[12rem]"
 				>
+					<ConferenceLogo className="h-10 w-10 shrink-0 sm:h-12 sm:w-12" />
 					<span
-						className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-full border font-display text-lg transition-colors sm:h-10 sm:w-10 ${
-							scrolled
-								? `border-gold-500 ${scrolledTextClass}`
-								: "border-paper text-paper"
-						}`}
-					>
-						W
-					</span>
-					<span
-						className={`min-w-0 text-[11px] font-medium leading-tight transition-colors sm:text-[16px] ${scrolled ? scrolledTextClass : "text-paper"}`}
+						className={`min-w-0 text-[11px] font-medium leading-tight transition-colors sm:text-[16px] min-[1400px]:text-[14px] ${scrolled ? scrolledTextClass : "text-paper"}`}
 					>
 						<span className="block whitespace-nowrap">
 							{t.header.university}{" "}
@@ -143,19 +149,19 @@ export default function Navbar() {
 						>
 							{isSeventhPage
 								? lang === "ar"
-									? "المؤتمر الدولي السابع"
+									? "مؤتمر الدولي السابع"
 									: "7th Int'l Conference"
 								: t.header.conference}
 						</span>
 					</span>
 				</button>
 
-				<nav className="hidden min-w-0 flex-1 items-center justify-center gap-4 min-[1400px]:flex min-[1400px]:gap-6">
+				<nav className="hidden min-w-0 flex-1 items-center justify-center gap-3 min-[1400px]:flex min-[1400px]:gap-3">
 					{activeLinks.map((link) => (
 						<button
 							key={link.id}
 							onClick={() => scrollTo(link.id)}
-							className={`whitespace-nowrap text-[16px] font-medium transition-colors hover:text-gold-500 ${
+							className={`whitespace-nowrap text-[14px] font-medium transition-colors hover:text-gold-500 ${
 								scrolled ? scrolledTextClass : "text-paper"
 							}`}
 						>
@@ -166,7 +172,7 @@ export default function Navbar() {
 					{contactLink && (
 						<button
 							onClick={() => scrollTo(contactLink.id)}
-							className={`whitespace-nowrap text-[16px] font-medium transition-colors hover:text-gold-500 ${
+							className={`whitespace-nowrap text-[14px] font-medium transition-colors hover:text-gold-500 ${
 								scrolled ? scrolledTextClass : "text-paper"
 							}`}
 						>
@@ -187,7 +193,7 @@ export default function Navbar() {
 							type="button"
 							onClick={togglePreviousVersionsOnTouch}
 							aria-expanded={previousVersionsOpen}
-							className={`flex items-center gap-1.5 py-1.5 text-[16px] font-medium transition-colors hover:text-gold-500 ${
+							className={`flex items-center gap-1.5 whitespace-nowrap py-1.5 text-[14px] font-medium transition-colors hover:text-gold-500 ${
 								scrolled ? scrolledTextClass : "text-paper"
 							}`}
 						>
@@ -227,10 +233,22 @@ export default function Navbar() {
 				</nav>
 
 				<div
-					className="flex shrink-0 items-center justify-end gap-2 min-[1400px]:gap-3"
+					className="flex shrink-0 items-center justify-end gap-2"
 					dir={lang === "ar" ? "rtl" : "ltr"}
 				>
-					<div className="hidden min-[1400px]:flex items-center gap-2">
+					<div className="hidden items-center gap-2 min-[1400px]:flex">
+						<button
+							type="button"
+							onClick={handleCountdownOpen}
+							className={`inline-flex items-center justify-center whitespace-nowrap rounded-full border px-2.5 py-1.5 text-[12px] font-medium transition-colors hover:text-gold-500 ${
+								scrolled
+									? `border-ink-900/15 ${scrolledTextClass}`
+									: "border-paper/50 text-paper"
+							}`}
+						>
+							العد التنازلي
+						</button>
+
 						{lang === "ar" ? (
 							<>
 								{!isSeventhPage ? (
@@ -240,7 +258,7 @@ export default function Navbar() {
 											navigate("/seventh-conference");
 											window.scrollTo({ top: 0, behavior: "smooth" });
 										}}
-										className={`inline-flex items-center justify-center whitespace-nowrap rounded-full border px-3 py-1.5 text-[13px] font-semibold transition-all ${
+										className={`inline-flex items-center justify-center whitespace-nowrap rounded-full border px-2.5 py-1.5 text-[12px] font-semibold transition-all ${
 											scrolled
 												? theme === "dark"
 													? "border-gold-500/50 bg-gold-500/15 text-white hover:bg-gold-500/25"
@@ -257,7 +275,7 @@ export default function Navbar() {
 											navigate("/");
 											window.scrollTo({ top: 0, behavior: "smooth" });
 										}}
-										className={`inline-flex items-center justify-center whitespace-nowrap rounded-full border px-3 py-1.5 text-[13px] font-semibold transition-all ${
+										className={`inline-flex items-center justify-center whitespace-nowrap rounded-full border px-2.5 py-1.5 text-[12px] font-semibold transition-all ${
 											scrolled
 												? `border-ink-900/15 ${scrolledTextClass} hover:bg-ink-900/5`
 												: "border-paper/40 text-paper hover:bg-paper/10"
@@ -270,7 +288,7 @@ export default function Navbar() {
 								<button
 									onClick={() => setLang("en")}
 									aria-label="toggle language"
-									className={`inline-flex items-center justify-center whitespace-nowrap rounded-full border px-3 py-1.5 text-[13px] font-medium transition-colors ${
+									className={`inline-flex items-center justify-center whitespace-nowrap rounded-full border px-2.5 py-1.5 text-[12px] font-medium transition-colors ${
 										scrolled
 											? `border-ink-900/15 ${scrolledTextClass}`
 											: "border-paper/50 text-paper"
@@ -288,7 +306,7 @@ export default function Navbar() {
 											navigate("/seventh-conference");
 											window.scrollTo({ top: 0, behavior: "smooth" });
 										}}
-										className={`inline-flex items-center justify-center whitespace-nowrap rounded-full border px-3 py-1.5 text-[13px] font-semibold transition-all ${
+										className={`inline-flex items-center justify-center whitespace-nowrap rounded-full border px-2.5 py-1.5 text-[12px] font-semibold transition-all ${
 											scrolled
 												? theme === "dark"
 													? "border-gold-500/50 bg-gold-500/15 text-white hover:bg-gold-500/25"
@@ -305,7 +323,7 @@ export default function Navbar() {
 											navigate("/");
 											window.scrollTo({ top: 0, behavior: "smooth" });
 										}}
-										className={`inline-flex items-center justify-center whitespace-nowrap rounded-full border px-3 py-1.5 text-[13px] font-semibold transition-all ${
+										className={`inline-flex items-center justify-center whitespace-nowrap rounded-full border px-2.5 py-1.5 text-[12px] font-semibold transition-all ${
 											scrolled
 												? `border-ink-900/15 ${scrolledTextClass} hover:bg-ink-900/5`
 												: "border-paper/40 text-paper hover:bg-paper/10"
@@ -318,7 +336,7 @@ export default function Navbar() {
 								<button
 									onClick={() => setLang("ar")}
 									aria-label="toggle language"
-									className={`inline-flex items-center justify-center whitespace-nowrap rounded-full border px-3 py-1.5 text-[13px] font-medium transition-colors ${
+									className={`inline-flex items-center justify-center whitespace-nowrap rounded-full border px-2.5 py-1.5 text-[12px] font-medium transition-colors ${
 										scrolled
 											? `border-ink-900/15 ${scrolledTextClass}`
 											: "border-paper/50 text-paper"
@@ -368,7 +386,7 @@ export default function Navbar() {
 							<button
 								key={link.id}
 								onClick={() => scrollTo(link.id)}
-								className={`rounded-md px-3 py-2.5 text-start text-[16px] font-medium transition-colors ${
+								className={`rounded-md px-3 py-2.5 text-start text-[16px] font-medium whitespace-nowrap transition-colors ${
 									scrolled
 										? `${scrolledTextClass} hover:bg-black/5`
 										: "text-ink-900 hover:bg-ink-900/5 dark:text-paper dark:hover:bg-paper/5"
@@ -381,7 +399,7 @@ export default function Navbar() {
 						{contactLink && (
 							<button
 								onClick={() => scrollTo(contactLink.id)}
-								className={`flex items-center rounded-md px-3 py-2.5 text-start text-[16px] font-medium transition-colors ${
+								className={`flex items-center rounded-md px-3 py-2.5 text-start text-[16px] font-medium whitespace-nowrap transition-colors ${
 									scrolled
 										? `${scrolledTextClass} hover:bg-black/5`
 										: "text-ink-900 hover:bg-ink-900/5 dark:text-paper dark:hover:bg-paper/5"
@@ -394,9 +412,24 @@ export default function Navbar() {
 						<div className="mt-2 border-t border-ink-900/10 pt-2 dark:border-paper/10">
 							<button
 								type="button"
+								onClick={() => {
+									setOpen(false);
+									handleCountdownOpen();
+								}}
+								className={`mb-1 flex w-full items-center rounded-md px-3 py-2.5 text-start text-[16px] font-medium whitespace-nowrap transition-colors ${
+									scrolled
+										? `${scrolledTextClass} hover:bg-black/5`
+										: "text-ink-900 hover:bg-ink-900/5 dark:text-paper dark:hover:bg-paper/5"
+								}`}
+							>
+								العد التنازلي
+							</button>
+
+							<button
+								type="button"
 								onClick={togglePreviousVersionsOnTouch}
 								aria-expanded={previousVersionsOpen}
-								className={`flex w-full items-center rounded-md px-3 py-2.5 text-start text-[16px] font-medium transition-colors ${
+								className={`flex w-full items-center rounded-md px-3 py-2.5 text-start text-[16px] font-medium whitespace-nowrap transition-colors ${
 									scrolled
 										? `${scrolledTextClass} hover:bg-black/5`
 										: "text-ink-900 hover:bg-ink-900/5 dark:text-paper dark:hover:bg-paper/5"
@@ -424,7 +457,7 @@ export default function Navbar() {
 													setPreviousVersionsOpen(false);
 													setOpen(false);
 												}}
-												className={`block w-full px-4 py-2 text-start text-[14px] transition-colors ${
+												className={`block w-full px-4 py-2 text-start text-[14px] whitespace-nowrap transition-colors ${
 													scrolled
 														? `${scrolledTextClass} hover:bg-black/5`
 														: "text-ink-900 hover:bg-ink-900/5 dark:text-paper dark:hover:bg-paper/5"
@@ -446,7 +479,7 @@ export default function Navbar() {
 									navigate("/seventh-conference");
 									window.scrollTo({ top: 0, behavior: "smooth" });
 								}}
-								className={`flex items-center gap-2 rounded-md px-3 py-2.5 text-start text-[16px] font-semibold transition-colors ${
+								className={`flex items-center gap-2 rounded-md px-3 py-2.5 text-start text-[16px] font-semibold whitespace-nowrap transition-colors ${
 									scrolled
 										? `${scrolledTextClass} hover:bg-black/5`
 										: "text-gold-600 hover:bg-gold-500/10 dark:text-gold-400"
@@ -454,7 +487,7 @@ export default function Navbar() {
 							>
 								<span>
 									{lang === "ar"
-										? "النسخة الحالية (المؤتمر السابع)"
+										? "النسخة الحالية (مؤتمر السابع)"
 										: "Current Edition (7th Conf)"}
 								</span>
 							</button>
@@ -466,7 +499,7 @@ export default function Navbar() {
 									navigate("/");
 									window.scrollTo({ top: 0, behavior: "smooth" });
 								}}
-								className={`flex items-center gap-2 rounded-md px-3 py-2.5 text-[16px] font-semibold transition-colors ${
+								className={`flex items-center gap-2 rounded-md px-3 py-2.5 text-[16px] font-semibold whitespace-nowrap transition-colors ${
 									scrolled
 										? `${scrolledTextClass} hover:bg-black/5`
 										: "text-ink-900 hover:bg-ink-900/5 dark:text-paper dark:hover:bg-paper/5"
@@ -479,7 +512,7 @@ export default function Navbar() {
 						<div className="mt-2 flex items-center gap-2 px-3">
 							<button
 								onClick={() => setLang(lang === "ar" ? "en" : "ar")}
-								className={`flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-[14px] font-medium transition-colors ${
+								className={`flex items-center gap-1.5 whitespace-nowrap rounded-full border px-3 py-1.5 text-[14px] font-medium transition-colors ${
 									scrolled
 										? `border-ink-900/15 ${scrolledTextClass}`
 										: "border-ink-900/15 text-ink-900 dark:border-paper/20 dark:text-paper"

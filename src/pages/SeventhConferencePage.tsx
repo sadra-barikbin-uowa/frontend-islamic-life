@@ -23,7 +23,7 @@ export default function SeventhConferencePage() {
 		const originalTitle = document.title;
 		document.title =
 			lang === "ar"
-				? "المؤتمر الدولي السابع — الهوية الإسلامية والتحديات المعاصرة | جامعة وارث الأنبياء"
+				? "مؤتمر الدولي السابع — الهوية الإسلامية والتحديات المعاصرة | جامعة وارث الأنبياء"
 				: "The 7th International Conference — Islamic Identity and Contemporary Challenges | Warith Al-Anbiyaa University";
 
 		return () => {

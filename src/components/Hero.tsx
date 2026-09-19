@@ -65,7 +65,7 @@ export default function Hero() {
 						<span className="flex h-2 w-2 rounded-full bg-gold-400 animate-pulse" />
 						<span>
 							{lang === "ar"
-								? "النسخة الحالية: المؤتمر الدولي السابع «الهوية الإسلامية والتحديات المعاصرة»"
+								? "النسخة الحالية: مؤتمر الدولي السابع «الهوية الإسلامية والتحديات المعاصرة»"
 								: "Current Edition: The 7th International Conference «Islamic Identity and Contemporary Challenges»"}
 						</span>
 						{lang === "ar" ? (
