@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-sans: 'Tajawal', 'IBM Plex Sans Arabic', 'Inter', sans-serif;
+  font-size: 16px;
+}
+
+:root {
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+}
+
+.font-display {
+  font-family: var(--font-sans);
+  font-weight: 700;
+}
+
+::selection {
+  background-color: #C9A65C;
+  color: #0F1B3D;
+}
+
+/* Focus visibility */
+:focus-visible {
+  outline: 2px solid #C9A65C;
+  outline-offset: 3px;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #C9A65C;
+  border-radius: 8px;
+}
+
+/* Section reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s var(--ease-out), transform 0.7s var(--ease-out);
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hairline rule */
+.rule {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, currentColor, transparent);
+  opacity: 0.2;
+}
+
+/* Accordion content transition */
+.accordion-panel {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.4s var(--ease-out);
+}
+.accordion-panel.open {
+  grid-template-rows: 1fr;
+}
+.accordion-panel > div {
+  overflow: hidden;
+}
+
+/* زخرفة إسلامية هندسية خفيفة — تُستخدم كخلفية زينة داخل بعض الأقسام لكسر جفاف التصميم */
+.pattern-islamic {
+  pointer-events: none;
+  background-image: radial-gradient(circle at 1px 1px, currentColor 1px, transparent 1.6px),
+    linear-gradient(45deg, transparent 48%, currentColor 48%, currentColor 52%, transparent 52%),
+    linear-gradient(-45deg, transparent 48%, currentColor 48%, currentColor 52%, transparent 52%);
+  background-size: 28px 28px, 28px 28px, 28px 28px;
+  color: theme('colors.gold.400');
+}
