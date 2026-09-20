@@ -125,7 +125,7 @@ export default function Navbar() {
 					onClick={handleBrandClick}
 					className="flex min-w-0 shrink-0 items-center gap-2.5 whitespace-nowrap text-start sm:gap-3 min-[1400px]:w-[12rem]"
 				>
-					<ConferenceLogo className="h-10 w-10 shrink-0 sm:h-12 sm:w-12" />
+					<ConferenceLogo className="h-14 w-14 shrink-0 sm:h-16 sm:w-16" />
 					<span
 						className={`min-w-0 text-[11px] font-medium leading-tight transition-colors sm:text-[16px] min-[1400px]:text-[14px] ${scrolled ? scrolledTextClass : "text-paper"}`}
 					>

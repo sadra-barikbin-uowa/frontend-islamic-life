@@ -120,7 +120,7 @@ export default function Gallery() {
 						</motion.div>
 					</motion.div>
 				</div>
-				<div className="mt-5 flex items-center justify-center gap-3">
+				<div className="mt-5 flex items-center justify-center gap-3" dir="ltr">
 					<button
 						type="button"
 						onClick={showPrevious}
