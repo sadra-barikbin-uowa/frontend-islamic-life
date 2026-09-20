@@ -123,7 +123,11 @@ export default function Navbar() {
 			>
 				<button
 					onClick={handleBrandClick}
-					className="flex min-w-0 shrink-0 items-center gap-2.5 whitespace-nowrap text-start sm:gap-3 min-[1400px]:w-[12rem]"
+					className={`flex min-w-0 shrink-0 items-center gap-2.5 whitespace-nowrap text-start sm:gap-3 min-[1400px]:w-[12rem] ${
+						lang === "en"
+							? "min-[1400px]:-ms-8 min-[1400px]:me-20"
+							: "min-[1400px]:me-12"
+					}`}
 				>
 					<ConferenceLogo className="h-14 w-14 shrink-0 sm:h-16 sm:w-16" />
 					<span

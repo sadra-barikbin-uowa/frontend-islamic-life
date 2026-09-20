@@ -310,7 +310,7 @@ export const content = {
       text: 'كلية العلوم الإسلامية — جامعة وارث الأنبياء، برعاية العتبة الحسينية المقدسة',
       linksTitle: 'الروابط السريعة',
       contactTitle: 'تواصل معنا',
-      rights: 'جميع الحقوق محفوظة',
+      rights:'مركز الحاسبة الألكتروني شعبة البرمجيات'
     },
     ui: {
       themeToggle: 'الوضع الليلي',
@@ -576,7 +576,7 @@ export const content = {
       text: 'College of Islamic Sciences — University of Warith Al-Anbiyaa, under the patronage of the Al-Hussainiya Holy Shrine',
       linksTitle: 'Quick Links',
       contactTitle: 'Contact Us',
-      rights: 'All rights reserved',
+      rights: 'computer center software division',
     },
     ui: {
       themeToggle: 'Dark Mode',
