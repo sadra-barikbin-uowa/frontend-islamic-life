@@ -159,11 +159,13 @@ export default function Navbar() {
 					<span
 						className={`min-w-0 text-[11px] font-medium leading-tight transition-colors sm:text-[16px] min-[1400px]:text-[14px] ${scrolled ? scrolledTextClass : "text-paper"}`}
 					>
-						<span className="block whitespace-nowrap">
+						<span className="block whitespace-nowrap" dir={t.dir}>
 							{t.header.university}{" "}
-							<small className="text-[0.7em] opacity-80">
-								{t.header.honorific}
-							</small>
+							{!isSeventhPage && (
+								<small className="text-[0.7em] opacity-80">
+									{t.header.honorific}
+								</small>
+							)}
 						</span>
 						<span className="mt-0.5 block whitespace-nowrap text-[0.86em] opacity-75">
 							{t.header.college}
@@ -179,8 +181,8 @@ export default function Navbar() {
 						>
 							{isSeventhPage
 								? lang === "ar"
-									? "مؤتمر الدولي السابع"
-									: "7th Int'l Conference"
+									? "المؤتمر الدولي السابع"
+									: "The 7th International Conference"
 								: t.header.conference}
 						</span>
 					</span>
@@ -276,7 +278,7 @@ export default function Navbar() {
 									: "border-paper/50 text-paper"
 							}`}
 						>
-							العد التنازلي
+							{lang === "ar" ? "العد التنازلي" : "Countdown"}
 						</button>
 
 						{lang === "ar" ? (
@@ -452,7 +454,7 @@ export default function Navbar() {
 										: "text-ink-900 hover:bg-ink-900/5 dark:text-paper dark:hover:bg-paper/5"
 								}`}
 							>
-								العد التنازلي
+								{lang === "ar" ? "العد التنازلي" : "Countdown"}
 							</button>
 
 							<button
@@ -516,7 +518,7 @@ export default function Navbar() {
 							>
 								<span>
 									{lang === "ar"
-										? "النسخة الحالية (مؤتمر السابع)"
+										? "النسخة الحالية (المؤتمر الدولي السابع)"
 										: "Current Edition (7th Conf)"}
 								</span>
 							</button>

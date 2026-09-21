@@ -5,24 +5,9 @@ import { useApp } from "../context/AppContext";
 import Reveal from "./Reveal";
 import HighlightedConferenceText from "./HighlightedConferenceText";
 
-/**
- * صور معرض الصور (Gallery) — هذه روابط مؤقتة (Placeholder) من Unsplash فقط لتجربة التصميم.
- *
- * لإضافة صوركم الحقيقية من فعاليات المؤتمر:
- * 1) ضعوا ملفات الصور داخل: public/images/gallery/  (مثال: gallery-1.jpg, gallery-2.jpg ...)
- * 2) استبدلوا كل رابط أدناه بالمسار المحلي، مثل: '/images/gallery/gallery-1.jpg'
- * 3) يمكن إضافة أو حذف عناصر من هذه القائمة بحرية — التصميم والعرض (Lightbox) سيعملان تلقائيًا
- *    مهما كان عدد الصور.
- */
 const photos = [
-	"الامام الحسين(ع).jpg",
-	"طلاب.jpg",
-	"جامعة وارث.jpg",
-	"اجتماع2.jpg",
-	"اجتماع دكاترة.jpg",
-	"بناية العلى.jpg",
-
-	// ⬅️ أضيفوا هنا أي صور إضافية بنفس الطريقة
+	"/معرض.jpg",
+	...Array.from({ length: 20 }, (_, index) => `/معرض${index + 2}.jpg`),
 ];
 
 export default function Gallery() {

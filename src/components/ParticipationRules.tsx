@@ -39,8 +39,17 @@ export default function ParticipationRules() {
 				</div>
 
 				<Reveal delay={t.rules.items.length * 70 + 80} className="mt-8">
-					<div className="flex items-center gap-3 rounded-lg border border-gold-400/30 bg-gold-500/5 px-6 py-4 text-sm text-gold-200">
-						<ShieldCheck size={18} className="shrink-0 text-gold-400" />
+					<div
+						role="status"
+						className="flex items-center gap-4 rounded-xl border-2 border-gold-400/70 bg-gold-500/15 px-6 py-5 text-base font-bold leading-relaxed text-gold-100 shadow-[0_10px_35px_rgba(201,166,92,0.14)] sm:px-7 sm:py-6 sm:text-lg"
+					>
+						<span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-gold-300/60 bg-gold-400/20">
+							<ShieldCheck
+								size={26}
+								strokeWidth={2.2}
+								className="text-gold-300"
+							/>
+						</span>
 						<span>{t.cfp.deadline}</span>
 					</div>
 				</Reveal>

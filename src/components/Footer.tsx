@@ -65,16 +65,19 @@ export default function Footer() {
 							{t.footer.linksTitle}
 						</p>
 						<ul className="mt-4 space-y-2.5">
-							{t.nav.links.slice(0, 5).map((link) => (
-								<li key={link.id}>
-									<button
-										onClick={() => scrollTo(link.id)}
-										className="text-sm text-ink-200 hover:text-paper"
-									>
-										{link.label}
-									</button>
-								</li>
-							))}
+							{t.nav.links
+								.filter((link) => link.id !== "contact")
+								.slice(0, 5)
+								.map((link) => (
+									<li key={link.id}>
+										<button
+											onClick={() => scrollTo(link.id)}
+											className="text-sm text-ink-200 hover:text-paper"
+										>
+											{link.label}
+										</button>
+									</li>
+								))}
 						</ul>
 					</div>
 
@@ -123,7 +126,7 @@ export default function Footer() {
 
 				<p className="pt-6 text-center text-xs text-ink-200">
 					© {new Date().getFullYear()} {t.meta.university} —{" "}
-					<ConferenceName greenClassName="text-green-400" />. {t.footer.rights}.
+					<ConferenceName greenClassName="text-green-400" />. {t.footer.rights}
 				</p>
 			</div>
 		</footer>

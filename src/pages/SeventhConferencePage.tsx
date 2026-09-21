@@ -23,7 +23,7 @@ export default function SeventhConferencePage() {
 		const originalTitle = document.title;
 		document.title =
 			lang === "ar"
-				? "مؤتمر الدولي السابع — عنوان استقى وجوده من سبل خدمة الدين والإنسان والوطن | جامعة وارث الأنبياء"
+				? "المؤتمر الدولي السابع — عنوان استقى وجوده من سبل خدمة الدين والإنسان والوطن | جامعة وارث الأنبياء"
 				: "The 7th International Conference — A Title Inspired by Serving Faith, Humanity, and the Nation | Warith Al-Anbiyaa University";
 
 		return () => {

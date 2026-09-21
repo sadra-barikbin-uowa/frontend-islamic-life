@@ -36,7 +36,7 @@ export default function Accordion({
 						</button>
 						<div className={`accordion-panel ${isOpen ? "open" : ""}`}>
 							<div className="px-4 sm:px-5">
-								<p className="max-w-2xl border-t border-gold-500/15 pb-5 pt-1 text-sm leading-relaxed text-slate-ink dark:border-gold-400/15 dark:text-ink-200">
+								<p className="max-w-2xl border-t border-gold-500/15 pb-5 pt-3 text-base font-medium leading-relaxed text-ink-800 dark:border-gold-400/15 dark:text-ink-100">
 									{item.a}
 								</p>
 							</div>

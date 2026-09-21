@@ -13,7 +13,12 @@ const ease = [0.16, 1, 0.3, 1] as const;
  * المقاس المقترح: 1920×1080 (landscape). عند استبدال الملفات بنفس الأسماء
  * سيعمل السلايدر تلقائيًا بدون أي تعديل على الكود.
  */
-const heroImages = ["/الامام الحسين(ع).jpg", "/طلاب.jpg"];
+const heroImages = [
+	"/الامام الحسين(ع).jpg",
+	"/معرض4.jpg",
+	"/معرض3.jpg",
+	"/معرض2.jpg",
+];
 
 const AUTOPLAY_MS = 5000;
 
@@ -65,7 +70,7 @@ export default function Hero() {
 						<span className="flex h-2 w-2 rounded-full bg-gold-400 animate-pulse" />
 						<span>
 							{lang === "ar"
-								? "النسخة الحالية: مؤتمر الدولي السابع «عنوان استقى وجوده من سبل خدمة الدين والإنسان والوطن»"
+								? "النسخة الحالية: المؤتمر الدولي السابع «عنوان استقى وجوده من سبل خدمة الدين والإنسان والوطن»"
 								: "Current Edition: The 7th International Conference «A Title Inspired by Serving Faith, Humanity, and the Nation»"}
 						</span>
 						{lang === "ar" ? (

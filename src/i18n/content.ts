@@ -17,7 +17,7 @@ export const content = {
     },
     nav: {
       links: [
-        { id: 'about', label: 'عن مؤتمر' },
+        { id: 'about', label: 'عن المؤتمر' },
         { id: 'faq', label: 'أسئلة عامة' },
         { id: 'contact', label: 'تواصل' },
       ],
@@ -42,18 +42,18 @@ export const content = {
       archive: 'الأرشيف',
     },
     seventhConference: {
-      editionBadge: 'مؤتمر الدولي السابع — الدورة الحالية',
-      editionTitle: 'مؤتمر الدولي السابع',
+      editionBadge: 'المؤتمر الدولي السابع — الدورة الحالية',
+      editionTitle: 'المؤتمر الدولي السابع',
       themeTitle: 'عنوان استقى وجوده من سبل خدمة الدين والإنسان والوطن',
       eyebrow: 'كلية العلوم الإسلامية — جامعة وارث الأنبياء (ع)',
       subtitle:
-        'ضمن المسار العام للمؤتمر الإسلام حياة — ملتقى فكري وثقافي وأكاديمي يناقش قضايا الهوية والتعليم والمجتمع الإسلام في مواجهة تحديات العصر، وبناء الإنسان وتنمية الحياة.',
-      ctaPrimary: 'قدّم بحثك للمؤتمر السابع',
+        'ضمن المسار العام لمؤتمر الإسلام حياة — ملتقى فكري وثقافي وأكاديمي يناقش قضايا الهوية والتعليم والمجتمع ، الإسلامي في مواجهة تحديات العصر، وبناء الإنسان وتنمية الحياة.',
+      ctaPrimary: 'قدّم بحثك إلى المؤتمر الدولي السابع',
       ctaRules: 'ضوابط المشاركة',
       ctaCommittees: 'اللجان المشرفة',
       dateLine: '2026 – 1448 · كربلاء المقدسة، جامعة وارث الأنبياء (ع)',
       currentVersionBadge: 'النسخة السابعة',
-      backToPortal: 'مؤتمر العام',
+      backToPortal: 'المؤتمر العام',
       navLinks: [
         { id: 'seventh-hero', label: 'الرئيسية' },
         { id: 'about', label: 'عن الدورة السابعة' },
@@ -65,7 +65,7 @@ export const content = {
         { id: 'contact', label: 'تواصل' },
       ],
       aboutLead:
-        'يأتي مؤتمر الدولي السابع تحت عنوان "عنوان استقى وجوده من سبل خدمة الدين والإنسان والوطن" ليقدم منصة علمية وفكرية عالمية تستحضر الرؤية الإسلامية المعاصرة لمعالجة قضايا الإنسان والمجتمع، وتعزيز القيم الإنسانية، واستشراف الحلول العلمية للتحديات المعاصرة.',
+        'يأتي المؤتمر الدولي السابع تحت عنوان "عنوان استقى وجوده من سبل خدمة الدين والإنسان والوطن" ليقدم منصة علمية وفكرية عالمية تستحضر الرؤية الإسلامية المعاصرة لمعالجة قضايا الإنسان والمجتمع، وتعزيز القيم الإنسانية، واستشراف الحلول العلمية للتحديات المعاصرة.',
       about: {
         vision: {
           title: 'الرؤية',
@@ -89,7 +89,7 @@ export const content = {
           { n: '03', title: 'المعرفة في خدمة المجتمع', text: 'ربط البحث العلمي باحتياجات المجتمع وتحويل المعرفة إلى حلول وتوصيات قابلة للتطبيق.' },
           { n: '04', title: 'الوعي والقيم', text: 'تعزيز الوعي الفردي والجمعي بالقيم الإسلامية والإنسانية وثقافة المسؤولية والمشاركة.' },
           { n: '05', title: 'العدالة والحكم الرشيد', text: 'ترسيخ قيم العدالة والنزاهة والشفافية والمسؤولية والحكم الرشيد.' },
-          { n: '06', title: 'استشراف المستقبل', text: 'استشراف قيم العدالة والنزاهة والشفافية والمسؤولية والحكم الرشيد.' },
+          { n: '06', title: 'استشراف التحديات المستقبلية', text: 'استشراف التحديات المستقبلية وبناء رؤى علمية للتعامل معها.' },
           { n: '07', title: 'الحوار العلمي والفكري', text: 'تعزيز الحوار العلمي والفكري بين الباحثين والمؤسسات الأكاديمية والمجتمعية.' },
           { n: '08', title: 'توسيع الشراكات', text: 'توسيع الشراكات العلمية والمجتمعية محلياً وإقليمياً ودولياً.' },
           { n: '09', title: 'دعم التنمية المستدامة', text: 'دعم أهداف التنمية المستدامة ذات الصلة بالسلام والعدل والمؤسسات والشراكات.' },
@@ -113,7 +113,7 @@ export const content = {
       { label: 'الراعي الرسمي', value: 'العتبة الحسينية المقدسة\nجامعة وارث الأنبياء' },
     ],
     about: {
-      title: 'عن مؤتمر',
+      title: 'عن المؤتمر',
       lead:
         'مؤتمر الإسلام حياة هو ملتقى فكري وثقافي وأكاديمي ومعرفي يجمع الباحثين والأكاديميين لمناقشة القضايا المعاصرة، واستكشاف دور الفكر الإسلام وقيمه في التعليم والمجتمع والتنمية الإنسانية، وبناء حوار علمي يربط المعرفة بواقع الإنسان وحاجاته.',
       partnersTitle: 'بالتعاون مع',
@@ -171,7 +171,7 @@ export const content = {
     },
     rules: {
       title: 'ضوابط المشاركة في مؤتمر',
-      subtitle: 'يُشترط في البحث المقدَّم للمشاركة في مؤتمر ما يأتي',
+      subtitle: 'يُشترط في البحث المقدَّم للمشاركة في لمؤتمر ما يأتي',
       items: [
         'أن يتسم البحث بالأصالة الفكرية، والأمانة العلمية، واحترام مناهج البحث، وقواعد النظر السليم، مع سلامة اللغة ووضوح الفكرة.',
         'أن يتميز البحث بمعالجة جديدة لموضوعه، أو يقدم نتائج بحثية مضافة في حقل الدراسات.',
@@ -186,7 +186,7 @@ export const content = {
       title: 'أسئلة عامة',
       subtitle: 'إجابات عن أكثر الأسئلة تكرارًا حول مؤتمر',
       items: [
-        { q: 'أين يُقام مؤتمر؟', a: 'يُقام مؤتمر في مقر جامعة وارث الأنبياء بمدينة كربلاء المقدسة، برعاية العتبة الحسينية المقدسة.' },
+        { q: 'أين يُقام المؤتمر؟', a: 'يُقام مؤتمر في مقر جامعة وارث الأنبياء بمدينة كربلاء المقدسة، برعاية العتبة الحسينية المقدسة.' },
         { q: 'متى آخر موعد لاستلام ملخصات البحوث؟', a: 'يُعلن الموعد النهائي لاستلام الملخصات عبر القنوات الرسمية للمؤتمر، ويُنصح المشاركون بالتقديم في أقرب وقت ممكن.' },
         { q: 'متى آخر موعد لاستلام البحوث بصيغتها النهائية؟', a: 'يُحدَّد هذا الموعد لاحقًا، ويُعلن عبر موقع مؤتمر ووسائل التواصل الرسمية.' },
         { q: 'متى يُعقد مؤتمر؟', a: 'يُعلن موعد انعقاد مؤتمر رسميًا عبر الموقع والقنوات الرسمية للجامعة والعتبة الحسينية المقدسة.' },
@@ -345,7 +345,7 @@ export const content = {
       },
     },
     footer: {
-      text: 'كلية العلوم الإسلامية — جامعة وارث الأنبياء، برعاية العتبة الحسينية المقدسة',
+      text: 'برعاية العتبة الحسينية المقدسة- جامعة وارث الأنبياء- كلية العلوم الإسلامية',
       linksTitle: 'الروابط السريعة',
       contactTitle: 'تواصل معنا',
       rights:'مركز الحاسبة الألكترونية - شعبة البرمجيات'
@@ -444,7 +444,7 @@ export const content = {
           { n: '03', title: 'Knowledge in Service of Society', text: 'Connecting research to society’s needs and turning knowledge into applicable solutions and recommendations.' },
           { n: '04', title: 'Awareness and Values', text: 'Strengthening individual and collective awareness of Islamic and human values and a culture of responsibility and participation.' },
           { n: '05', title: 'Justice and Good Governance', text: 'Entrenching the values of justice, integrity, transparency, responsibility, and good governance.' },
-          { n: '06', title: 'Anticipating the Future', text: 'Anticipating the values of justice, integrity, transparency, responsibility, and good governance.' },
+          { n: '06', title: 'Anticipating Future Challenges', text: 'Anticipating future challenges and developing scholarly visions to address them.' },
           { n: '07', title: 'Scholarly and Intellectual Dialogue', text: 'Strengthening scholarly and intellectual dialogue among researchers and academic and community institutions.' },
           { n: '08', title: 'Expanding Partnerships', text: 'Expanding scholarly and community partnerships locally, regionally, and internationally.' },
           { n: '09', title: 'Supporting Sustainable Development', text: 'Supporting sustainable development goals related to peace, justice, institutions, and partnerships.' },

@@ -22,7 +22,10 @@ export default function CallForPapers() {
 								<p className="mt-4 max-w-xl text-sm leading-relaxed text-ink-200 sm:text-base">
 									{t.cfp.text}
 								</p>
-								<p className="mt-3 text-sm font-medium text-gold-400">
+								<p
+									role="status"
+									className="mt-5 rounded-lg border border-gold-400/45 bg-gold-500/10 px-4 py-3 text-sm font-bold leading-relaxed text-gold-300 shadow-sm sm:text-base"
+								>
 									{t.cfp.deadline}
 								</p>
 							</div>

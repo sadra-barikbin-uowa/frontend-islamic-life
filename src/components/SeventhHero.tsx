@@ -4,7 +4,12 @@ import { ArrowDown, ChevronLeft, ChevronRight, Send } from "lucide-react";
 import { useApp } from "../context/AppContext";
 
 const ease = [0.16, 1, 0.3, 1] as const;
-const heroImages = ["/الامام الحسين(ع).jpg", "/طلاب.jpg", "/جامعة وارث.jpg"];
+const heroImages = [
+	"/الامام الحسين(ع).jpg",
+	"/معرض4.jpg",
+	"/معرض3.jpg",
+	"/معرض2.jpg",
+];
 const AUTOPLAY_MS = 5000;
 
 export default function SeventhHero() {

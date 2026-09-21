@@ -9,10 +9,10 @@ export default function FAQ() {
 		<section id="faq" className="flex h-full">
 			<div className="flex h-full w-full flex-col rounded-2xl border border-gold-500/25 bg-paper p-6 shadow-[0_16px_45px_rgba(15,27,61,0.1)] dark:border-gold-400/20 dark:bg-ink-950 sm:p-8">
 				<Reveal>
-					<h2 className="font-display text-3xl text-ink-900 dark:text-paper sm:text-4xl">
+					<h2 className="font-display text-3xl leading-tight text-ink-900 dark:text-paper sm:text-4xl">
 						{t.faq.title}
 					</h2>
-					<p className="mt-3 text-sm leading-relaxed text-slate-ink dark:text-ink-200">
+					<p className="mt-3 text-base leading-relaxed text-slate-ink dark:text-ink-200">
 						{t.faq.subtitle}
 					</p>
 				</Reveal>
