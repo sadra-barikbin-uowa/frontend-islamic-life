@@ -160,12 +160,7 @@ export default function Navbar() {
 						className={`min-w-0 text-[11px] font-medium leading-tight transition-colors sm:text-[16px] min-[1400px]:text-[14px] ${scrolled ? scrolledTextClass : "text-paper"}`}
 					>
 						<span className="block whitespace-nowrap" dir={t.dir}>
-							{t.header.university}{" "}
-							{!isSeventhPage && (
-								<small className="text-[0.7em] opacity-80">
-									{t.header.honorific}
-								</small>
-							)}
+							{t.header.university}
 						</span>
 						<span className="mt-0.5 block whitespace-nowrap text-[0.86em] opacity-75">
 							{t.header.college}
