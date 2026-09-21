@@ -1,7 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { Menu, X, Moon, Sun, ChevronDown } from "lucide-react";
+import { Menu, X, Moon, Sun, ChevronDown, Info } from "lucide-react";
 import { useLocation, useNavigate } from "react-router-dom";
+import { createPortal } from "react-dom";
 import { useApp } from "../context/AppContext";
 import ConferenceLogo from "./ConferenceLogo";
 
@@ -18,6 +19,9 @@ export default function Navbar() {
 	const [scrolled, setScrolled] = useState(false);
 	const [open, setOpen] = useState(false);
 	const [previousVersionsOpen, setPreviousVersionsOpen] = useState(false);
+	const [selectedPreviousVersion, setSelectedPreviousVersion] = useState<
+		(typeof t.nav.previousVersionsDetails)[number] | null
+	>(null);
 	const navbarRef = useRef<HTMLElement>(null);
 	const location = useLocation();
 	const navigate = useNavigate();
@@ -63,6 +67,28 @@ export default function Navbar() {
 		return () =>
 			document.removeEventListener("pointerdown", closeOnOutsideClick);
 	}, [previousVersionsOpen]);
+
+	useEffect(() => {
+		if (!selectedPreviousVersion) return;
+
+		const onKeyDown = (event: KeyboardEvent) => {
+			if (event.key === "Escape") setSelectedPreviousVersion(null);
+		};
+		const previousOverflow = document.body.style.overflow;
+		document.body.style.overflow = "hidden";
+		document.addEventListener("keydown", onKeyDown);
+
+		return () => {
+			document.body.style.overflow = previousOverflow;
+			document.removeEventListener("keydown", onKeyDown);
+		};
+	}, [selectedPreviousVersion]);
+
+	const openPreviousVersion = (index: number) => {
+		setSelectedPreviousVersion(t.nav.previousVersionsDetails[index]);
+		setPreviousVersionsOpen(false);
+		setOpen(false);
+	};
 
 	const scrollTo = (id: string) => {
 		setOpen(false);
@@ -216,11 +242,11 @@ export default function Navbar() {
 									transition={{ duration: 0.18 }}
 									className="absolute end-0 top-full z-50 w-72 overflow-hidden rounded-lg border border-ink-900/10 bg-paper py-1 shadow-lg dark:border-paper/10 dark:bg-ink-950"
 								>
-									{t.nav.previousVersions.map((version) => (
+									{t.nav.previousVersions.map((version, index) => (
 										<button
 											key={version}
 											type="button"
-											onClick={() => setPreviousVersionsOpen(false)}
+											onClick={() => openPreviousVersion(index)}
 											className={`block w-full px-4 py-2.5 text-start text-[14px] transition-colors ${
 												scrolled
 													? `${scrolledTextClass} hover:bg-black/5`
@@ -453,13 +479,12 @@ export default function Navbar() {
 										exit={{ opacity: 0, height: 0 }}
 										className="mt-1 overflow-hidden rounded-md border border-ink-900/10 dark:border-paper/10"
 									>
-										{t.nav.previousVersions.map((version) => (
+										{t.nav.previousVersions.map((version, index) => (
 											<button
 												key={version}
 												type="button"
 												onClick={() => {
-													setPreviousVersionsOpen(false);
-													setOpen(false);
+													openPreviousVersion(index);
 												}}
 												className={`block w-full px-4 py-2 text-start text-[14px] whitespace-nowrap transition-colors ${
 													scrolled
@@ -538,6 +563,98 @@ export default function Navbar() {
 						</div>
 					</div>
 				</div>
+			)}
+
+			{createPortal(
+				<AnimatePresence>
+					{selectedPreviousVersion && (
+						<motion.div
+							className="fixed inset-0 z-[80] flex items-center justify-center overflow-y-auto bg-ink-950/70 px-4 py-8 backdrop-blur-sm"
+							initial={{ opacity: 0 }}
+							animate={{ opacity: 1 }}
+							exit={{ opacity: 0 }}
+							onMouseDown={(event) => {
+								if (event.target === event.currentTarget)
+									setSelectedPreviousVersion(null);
+							}}
+						>
+							<motion.div
+								role="dialog"
+								aria-modal="true"
+								aria-labelledby="previous-version-modal-title"
+								className="w-full max-w-xl overflow-hidden rounded-xl border border-gold-500/30 bg-paper shadow-2xl dark:bg-ink-950"
+								initial={{ opacity: 0, y: 24, scale: 0.97 }}
+								animate={{ opacity: 1, y: 0, scale: 1 }}
+								exit={{ opacity: 0, y: 16, scale: 0.98 }}
+								transition={{ duration: 0.25 }}
+							>
+								<div className="flex items-start justify-between border-b border-ink-900/10 px-6 py-5 dark:border-paper/10 sm:px-8">
+									<div className="flex items-start gap-3">
+										<div className="mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-gold-500/15 text-gold-600 dark:text-gold-400">
+											<Info size={20} />
+										</div>
+										<div dir={t.dir}>
+											<p className="text-xs font-medium text-gold-600 dark:text-gold-400">
+												{t.nav.previousVersionsLabel}
+											</p>
+											<h2
+												id="previous-version-modal-title"
+												className="mt-1 font-display text-2xl text-ink-900 dark:text-paper"
+											>
+												{selectedPreviousVersion.edition}
+											</h2>
+										</div>
+									</div>
+									<button
+										type="button"
+										onClick={() => setSelectedPreviousVersion(null)}
+										aria-label={lang === "ar" ? "إغلاق" : "Close"}
+										className="flex h-9 w-9 items-center justify-center rounded-full text-slate-ink transition-colors hover:bg-ink-900/5 hover:text-ink-900 dark:text-ink-200 dark:hover:bg-paper/5 dark:hover:text-paper"
+									>
+										<X size={19} />
+									</button>
+								</div>
+								<div
+									dir={t.dir}
+									className="space-y-5 px-6 py-7 text-base leading-relaxed text-slate-ink dark:text-ink-200 sm:px-8 sm:py-8"
+								>
+									<div>
+										<p className="text-xs font-medium text-gold-600 dark:text-gold-400">
+											{lang === "ar" ? "السنة" : "Year"}
+										</p>
+										<p className="mt-1 text-lg font-semibold text-ink-900 dark:text-paper">
+											{selectedPreviousVersion.year}
+										</p>
+									</div>
+									<div>
+										<p className="text-xs font-medium text-gold-600 dark:text-gold-400">
+											{lang === "ar" ? "العنوان" : "Title"}
+										</p>
+										<p className="mt-1 text-lg font-semibold text-ink-900 dark:text-paper">
+											{selectedPreviousVersion.title}
+										</p>
+									</div>
+									<div>
+										<p className="text-xs font-medium text-gold-600 dark:text-gold-400">
+											{lang === "ar" ? "ملاحظات" : "Notes"}
+										</p>
+										<p className="mt-1">{selectedPreviousVersion.notes}</p>
+									</div>
+									<div className="flex justify-end border-t border-ink-900/10 pt-5 dark:border-paper/10">
+										<button
+											type="button"
+											onClick={() => setSelectedPreviousVersion(null)}
+											className="rounded-full bg-gold-500 px-6 py-2.5 text-sm font-medium text-ink-950 transition-colors hover:bg-gold-400"
+										>
+											{lang === "ar" ? "إغلاق" : "Close"}
+										</button>
+									</div>
+								</div>
+							</motion.div>
+						</motion.div>
+					)}
+				</AnimatePresence>,
+				document.body,
 			)}
 		</header>
 	);

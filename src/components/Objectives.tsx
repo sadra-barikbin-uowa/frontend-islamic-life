@@ -1,25 +1,34 @@
 import { useApp } from "../context/AppContext";
 import Reveal from "./Reveal";
 
-export default function Objectives() {
+export default function Objectives({
+	variant = "default",
+}: {
+	variant?: "default" | "seventh";
+}) {
 	const { t } = useApp();
+	const content =
+		variant === "seventh" ? t.seventhConference.objectives : t.objectives;
 
 	return (
-		<section id="objectives" className="bg-ink-900 px-5 py-24 text-paper lg:px-10 lg:py-32">
+		<section
+			id="objectives"
+			className="bg-ink-900 px-5 py-24 text-paper lg:px-10 lg:py-32"
+		>
 			<div className="mx-auto max-w-7xl">
 				<Reveal>
 					<div className="max-w-xl">
 						<h2 className="font-display text-3xl sm:text-4xl">
-							{t.objectives.title}
+							{content.title}
 						</h2>
 						<p className="mt-4 text-base leading-relaxed text-ink-200">
-							{t.objectives.subtitle}
+							{content.subtitle}
 						</p>
 					</div>
 				</Reveal>
 
 				<div className="mt-14 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-					{t.objectives.items.map((item, i) => (
+					{content.items.map((item, i) => (
 						<Reveal key={item.n} delay={i * 100}>
 							<div className="border-t border-gold-400/40 pt-6">
 								<span className="font-display text-3xl text-gold-400">

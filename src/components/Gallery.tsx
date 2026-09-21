@@ -21,9 +21,7 @@ const photos = [
 	"اجتماع2.jpg",
 	"اجتماع دكاترة.jpg",
 	"بناية العلى.jpg",
-	"https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=900&auto=format&fit=crop",
-	"https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=900&auto=format&fit=crop",
-	"https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=900&auto=format&fit=crop",
+
 	// ⬅️ أضيفوا هنا أي صور إضافية بنفس الطريقة
 ];
 

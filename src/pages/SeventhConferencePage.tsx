@@ -23,8 +23,8 @@ export default function SeventhConferencePage() {
 		const originalTitle = document.title;
 		document.title =
 			lang === "ar"
-				? "مؤتمر الدولي السابع — الهوية الإسلامية والتحديات المعاصرة | جامعة وارث الأنبياء"
-				: "The 7th International Conference — Islamic Identity and Contemporary Challenges | Warith Al-Anbiyaa University";
+				? "مؤتمر الدولي السابع — عنوان استقى وجوده من سبل خدمة الدين والإنسان والوطن | جامعة وارث الأنبياء"
+				: "The 7th International Conference — A Title Inspired by Serving Faith, Humanity, and the Nation | Warith Al-Anbiyaa University";
 
 		return () => {
 			document.title = originalTitle;
@@ -44,7 +44,7 @@ export default function SeventhConferencePage() {
 				<SeventhHero />
 				<ConferenceInfo />
 				<SeventhAbout />
-				<Objectives />
+				<Objectives variant="seventh" />
 				<ParticipationRules />
 				<Committees />
 				<div className="mx-auto grid w-full max-w-7xl items-stretch gap-6 px-5 py-24 lg:grid-cols-2 lg:px-10 lg:py-32">

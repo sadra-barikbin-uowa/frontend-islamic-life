@@ -8,18 +8,18 @@ export default function SeventhAbout() {
 	const content = t.seventhConference;
 	const blocks = [
 		{
-			title: t.about.goals.title,
-			text: t.about.goals.text,
+			title: content.about.goals.title,
+			text: content.about.goals.text,
 			accent: true,
 		},
 		{
-			title: t.about.vision.title,
-			text: t.about.vision.text,
+			title: content.about.vision.title,
+			text: content.about.vision.text,
 			accent: false,
 		},
 		{
-			title: t.about.mission.title,
-			text: t.about.mission.text,
+			title: content.about.mission.title,
+			text: content.about.mission.text,
 			accent: false,
 		},
 	];

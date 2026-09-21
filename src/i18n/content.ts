@@ -22,12 +22,20 @@ export const content = {
         { id: 'contact', label: 'تواصل' },
       ],
       previousVersions: [
-        'مؤتمر الإسلام حياة الدولي الأول',
-        'مؤتمر الإسلام حياة الدولي الثاني',
-        'مؤتمر الإسلام حياة الدولي الثالث',
-        'مؤتمر الإسلام حياة الدولي الرابع',
-        'مؤتمر الإسلام حياة الدولي الخامس',
-        'مؤتمر الإسلام حياة الدولي السادس',
+        'الأولى (إشكالية الدراسات الحداثية للنصوص الإسلامية)',
+        'الثانية (الغزو الثقافي: سبل الوقاية والمعالجة)',
+        'الثالثة (أثر الخطاب الإسلامي في بناء المنظومة القيمية)',
+        'الرابعة (الهوية الإسلامية والتحديات المعاصرة)',
+        'الخامسة (حقوق الإنسان والتحديات المعاصرة)',
+        'السادسة (مكافحة الفساد: فرص وتحديات)',
+      ],
+      previousVersionsDetails: [
+        { edition: 'النسخة الأولى', year: '2019/3/12', title: 'إشكالية الدراسات الحداثية للنصوص الإسلامية', notes: 'عُقدت بالتعاون بين كليتي العلوم الإسلامية في جامعتي كربلاء ووارث الأنبياء، وافتتحت في 2019/3/12.' },
+        { edition: 'النسخة الثانية', year: '2020/3/12', title: 'الغزو الثقافي: سبل الوقاية والمعالجة', notes: 'عُقدت بالتعاون بين كليتي العلوم الإسلامية في جامعتي كربلاء ووارث الأنبياء، وافتتحت في 2020/3/12.' },
+        { edition: 'النسخة الثالثة', year: '2021/12/25', title: 'أثر الخطاب الإسلامي في بناء المنظومة القيمية', notes: 'عُقدت بالتعاون بين كليتي العلوم الإسلامية في جامعتي وارث الأنبياء وكربلاء في 2021/12/25.' },
+        { edition: 'النسخة الرابعة', year: '2023/5/17', title: 'الهوية الإسلامية والتحديات المعاصرة', notes: 'عُقدت في 2023/5/17، بالتعاون مع جامعة كربلاء/كلية العلوم الإسلامية.' },
+        { edition: 'النسخة الخامسة', year: '2024', title: 'حقوق الإنسان والتحديات المعاصرة', notes: 'عُقدت في 2024، وركزت على قضايا حقوق الإنسان من المنظور الإسلامي والتحديات المعاصرة.' },
+        { edition: 'النسخة السادسة', year: '2025/8/30', title: 'مكافحة الفساد: فرص وتحديات', notes: 'عُقدت في 2025/8/30، وارتبطت بصورة مباشرة بالهدفين 16 و17 من أهداف التنمية المستدامة.' },
       ],
       previousVersionsLabel: 'النسخ السابقة',
       submit: 'قدّم بحثك',
@@ -36,7 +44,7 @@ export const content = {
     seventhConference: {
       editionBadge: 'مؤتمر الدولي السابع — الدورة الحالية',
       editionTitle: 'مؤتمر الدولي السابع',
-      themeTitle: 'الهوية الإسلامية والتحديات المعاصرة',
+      themeTitle: 'عنوان استقى وجوده من سبل خدمة الدين والإنسان والوطن',
       eyebrow: 'كلية العلوم الإسلامية — جامعة وارث الأنبياء (ع)',
       subtitle:
         'ضمن المسار العام للمؤتمر الإسلام حياة — ملتقى فكري وثقافي وأكاديمي يناقش قضايا الهوية والتعليم والمجتمع الإسلام في مواجهة تحديات العصر، وبناء الإنسان وتنمية الحياة.',
@@ -57,7 +65,37 @@ export const content = {
         { id: 'contact', label: 'تواصل' },
       ],
       aboutLead:
-        'يأتي مؤتمر الدولي السابع تحت شعار "الهوية الإسلامية والتحديات المعاصرة" ليناقش التحديات الفكرية والثقافية التي تواجه الهوية الإسلامية في ظل العولمة، وتأكيد الهوية كمنهج رباني ونمط سلوكي وتصوري أصيل يحفظ كيان الفرد والمجتمع.',
+        'يأتي مؤتمر الدولي السابع تحت عنوان "عنوان استقى وجوده من سبل خدمة الدين والإنسان والوطن" ليقدم منصة علمية وفكرية عالمية تستحضر الرؤية الإسلامية المعاصرة لمعالجة قضايا الإنسان والمجتمع، وتعزيز القيم الإنسانية، واستشراف الحلول العلمية للتحديات المعاصرة.',
+      about: {
+        vision: {
+          title: 'الرؤية',
+          text: 'الريادة في بناء منصة علمية وفكرية عالمية تستحضر الرؤية الإسلامية المعاصرة لمعالجة قضايا الإنسان والمجتمع، وتعزيز القيم الإنسانية، واستشراف الحلول العلمية للتحديات المعاصرة بما يسهم في تحقيق التنمية المستدامة.',
+        },
+        mission: {
+          title: 'الرسالة',
+          text: 'تقديم منصة علمية رصينة تجمع الباحثين والمتخصصين لمناقشة القضايا المعاصرة من منظور إسلامي علمي منفتح، وتبادل المعرفة والخبرات، وإنتاج رؤى وتوصيات تسهم في بناء الإنسان وخدمة المجتمع وترسيخ قيم العدالة والسلام والمسؤولية والحكم الرشيد.',
+        },
+        goals: {
+          title: 'الشعار',
+          text: 'مؤتمر علمي وفكري يستلهم الرؤية الإسلامية المعاصرة، ويجمع الباحثين لإنتاج المعرفة والحلول والتوصيات التي تخدم الإنسان والمجتمع والوطن، وتعزز العدالة والسلام والمسؤولية والحكم الرشيد والتنمية المستدامة.',
+        },
+      },
+      objectives: {
+        title: 'أهداف المؤتمر',
+        subtitle: 'أهداف علمية ومجتمعية تسهم في خدمة الإنسان والمجتمع وترسيخ القيم الإسلامية والإنسانية',
+        items: [
+          { n: '01', title: 'تعزيز البحث العلمي', text: 'تعزيز البحث العلمي في القضايا الإسلامية والإنسانية والاجتماعية المعاصرة.' },
+          { n: '02', title: 'الرؤية الإسلامية المعاصرة', text: 'تقديم الرؤية الإسلامية المعاصرة في مواجهة التحديات الفكرية والاجتماعية والتنموية.' },
+          { n: '03', title: 'المعرفة في خدمة المجتمع', text: 'ربط البحث العلمي باحتياجات المجتمع وتحويل المعرفة إلى حلول وتوصيات قابلة للتطبيق.' },
+          { n: '04', title: 'الوعي والقيم', text: 'تعزيز الوعي الفردي والجمعي بالقيم الإسلامية والإنسانية وثقافة المسؤولية والمشاركة.' },
+          { n: '05', title: 'العدالة والحكم الرشيد', text: 'ترسيخ قيم العدالة والنزاهة والشفافية والمسؤولية والحكم الرشيد.' },
+          { n: '06', title: 'استشراف المستقبل', text: 'استشراف قيم العدالة والنزاهة والشفافية والمسؤولية والحكم الرشيد.' },
+          { n: '07', title: 'الحوار العلمي والفكري', text: 'تعزيز الحوار العلمي والفكري بين الباحثين والمؤسسات الأكاديمية والمجتمعية.' },
+          { n: '08', title: 'توسيع الشراكات', text: 'توسيع الشراكات العلمية والمجتمعية محلياً وإقليمياً ودولياً.' },
+          { n: '09', title: 'دعم التنمية المستدامة', text: 'دعم أهداف التنمية المستدامة ذات الصلة بالسلام والعدل والمؤسسات والشراكات.' },
+          { n: '10', title: 'تفعيل أثر المؤتمر', text: 'تفعيل الأثر العلمي للمؤتمر من خلال متابعة توصياته وتحويلها إلى مبادرات وممارسات علمية ومجتمعية.' },
+        ],
+      },
     },
     hero: {
       eyebrow: 'كلية العلوم الإسلامية — جامعة وارث الأنبياء',
@@ -92,7 +130,7 @@ export const content = {
       },
       goals: {
         title: 'الشعار',
-        text: '"الهوية الإسلامية والتحديات المعاصرة" — شعار الدورة الحالية من مؤتمر الدولي السابع، ضمن المسار العام لمؤتمر الإسلام حياة.',
+        text: '"عنوان استقى وجوده من سبل خدمة الدين والإنسان والوطن" — عنوان المؤتمر الدولي السابع ضمن المسار العام لمؤتمر الإسلام حياة، ويعبّر عن رؤيته في خدمة الدين والإنسان والوطن من خلال البحث العلمي والحوار الفكري.',
       },
     },
     objectives: {
@@ -310,7 +348,7 @@ export const content = {
       text: 'كلية العلوم الإسلامية — جامعة وارث الأنبياء، برعاية العتبة الحسينية المقدسة',
       linksTitle: 'الروابط السريعة',
       contactTitle: 'تواصل معنا',
-      rights:'مركز الحاسبة الألكتروني شعبة البرمجيات'
+      rights:'مركز الحاسبة الألكترونية - شعبة البرمجيات'
     },
     ui: {
       themeToggle: 'الوضع الليلي',
@@ -339,12 +377,20 @@ export const content = {
         { id: 'contact', label: 'Contact' },
       ],
       previousVersions: [
-        'The 1st International Islamic Life Conference',
-        'The 2nd International Islamic Life Conference',
-        'The 3rd International Islamic Life Conference',
-        'The 4th International Islamic Life Conference',
-        'The 5th International Islamic Life Conference',
-        'The 6th International Islamic Life Conference',
+        '1st (Modernist Approaches to Islamic Texts)',
+        '2nd (Cultural Invasion: Prevention and Remedy)',
+        '3rd (The Impact of Islamic Discourse on Building Values)',
+        '4th (Islamic Identity and Contemporary Challenges)',
+        '5th (Human Rights and Contemporary Challenges)',
+        '6th (Combating Corruption: Opportunities and Challenges)',
+      ],
+      previousVersionsDetails: [
+        { edition: '1st Edition', year: '2019/3/12', title: 'Modernist Approaches to Islamic Texts', notes: 'Held in cooperation between the Colleges of Islamic Sciences at the Universities of Karbala and Warith Al-Anbiyaa; opened on 2019/3/12.' },
+        { edition: '2nd Edition', year: '2020/3/12', title: 'Cultural Invasion: Prevention and Remedy', notes: 'Held in cooperation between the Colleges of Islamic Sciences at the Universities of Karbala and Warith Al-Anbiyaa; opened on 2020/3/12.' },
+        { edition: '3rd Edition', year: '2021/12/25', title: 'The Impact of Islamic Discourse on Building Values', notes: 'Held in cooperation between the Colleges of Islamic Sciences at the Universities of Warith Al-Anbiyaa and Karbala on 2021/12/25.' },
+        { edition: '4th Edition', year: '2023/5/17', title: 'Islamic Identity and Contemporary Challenges', notes: 'Held on 2023/5/17 in cooperation with the University of Karbala, College of Islamic Sciences.' },
+        { edition: '5th Edition', year: '2024', title: 'Human Rights and Contemporary Challenges', notes: 'Held in 2024, focusing on human rights issues from an Islamic perspective and contemporary challenges.' },
+        { edition: '6th Edition', year: '2025/8/30', title: 'Combating Corruption: Opportunities and Challenges', notes: 'Held on 2025/8/30 and directly connected to Sustainable Development Goals 16 and 17.' },
       ],
       previousVersionsLabel: 'Previous Versions',
       submit: 'Submit Your Research',
@@ -353,7 +399,7 @@ export const content = {
     seventhConference: {
       editionBadge: 'The 7th International Conference — Current Edition',
       editionTitle: 'The 7th International Conference',
-      themeTitle: 'Islamic Identity and Contemporary Challenges',
+      themeTitle: 'A Title Inspired by Serving Faith, Humanity, and the Nation',
       eyebrow: 'College of Islamic Sciences — Warith Al-Anbiyaa University (AS)',
       subtitle:
         'Part of the Islamic Life Conference series — an intellectual, cultural, and academic forum addressing identity, education, and Islamic society amid contemporary challenges.',
@@ -374,7 +420,37 @@ export const content = {
         { id: 'contact', label: 'Contact' },
       ],
       aboutLead:
-        'Under the theme "Islamic Identity and Contemporary Challenges", the 7th International Conference convenes researchers to investigate the intellectual and cultural challenges facing Islamic identity in an era of globalization, emphasizing identity as a divine approach and unified lifestyle that preserves individuals and society.',
+        'The 7th International Conference, under the title "A Title Inspired by Serving Faith, Humanity, and the Nation", presents a global scholarly and intellectual platform that brings a contemporary Islamic vision to addressing human and societal issues, advancing human values, and anticipating scientific solutions to contemporary challenges.',
+      about: {
+        vision: {
+          title: 'A Title Inspired by Serving Faith, Humanity, and the Nation',
+          text: 'Leading the development of a global scholarly and intellectual platform that brings a contemporary Islamic vision to addressing human and societal issues, advancing human values, and anticipating scientific solutions to contemporary challenges in support of sustainable development.',
+        },
+        mission: {
+          title: 'Mission',
+          text: 'Providing a rigorous scholarly platform that brings together researchers and specialists to discuss contemporary issues from an open, scholarly Islamic perspective, exchange knowledge and expertise, and produce insights and recommendations that build people, serve society, and reinforce justice, peace, responsibility, and good governance.',
+        },
+        goals: {
+          title: 'Theme',
+          text: 'A scholarly and intellectual conference inspired by a contemporary Islamic vision, bringing researchers together to produce knowledge, solutions, and recommendations that serve people, society, and the nation while advancing justice, peace, responsibility, good governance, and sustainable development.',
+        },
+      },
+      objectives: {
+        title: 'Conference Objectives',
+        subtitle: 'Scholarly and social objectives that serve people and society while reinforcing Islamic and human values',
+        items: [
+          { n: '01', title: 'Advancing Research', text: 'Advancing scholarly research in contemporary Islamic, human, and social issues.' },
+          { n: '02', title: 'A Contemporary Islamic Vision', text: 'Presenting a contemporary Islamic vision for confronting intellectual, social, and developmental challenges.' },
+          { n: '03', title: 'Knowledge in Service of Society', text: 'Connecting research to society’s needs and turning knowledge into applicable solutions and recommendations.' },
+          { n: '04', title: 'Awareness and Values', text: 'Strengthening individual and collective awareness of Islamic and human values and a culture of responsibility and participation.' },
+          { n: '05', title: 'Justice and Good Governance', text: 'Entrenching the values of justice, integrity, transparency, responsibility, and good governance.' },
+          { n: '06', title: 'Anticipating the Future', text: 'Anticipating the values of justice, integrity, transparency, responsibility, and good governance.' },
+          { n: '07', title: 'Scholarly and Intellectual Dialogue', text: 'Strengthening scholarly and intellectual dialogue among researchers and academic and community institutions.' },
+          { n: '08', title: 'Expanding Partnerships', text: 'Expanding scholarly and community partnerships locally, regionally, and internationally.' },
+          { n: '09', title: 'Supporting Sustainable Development', text: 'Supporting sustainable development goals related to peace, justice, institutions, and partnerships.' },
+          { n: '10', title: 'Activating the Conference Impact', text: 'Activating the conference’s scholarly impact by following up on its recommendations and turning them into scholarly and community initiatives and practices.' },
+        ],
+      },
     },
     hero: {
       eyebrow: 'College of Islamic Sciences — Warith Al-Anbiyaa University',
@@ -409,7 +485,7 @@ export const content = {
       },
       goals: {
         title: 'Theme',
-        text: '"Islamic Identity and Contemporary Challenges" — the theme of the current 7th International Conference edition, within the wider Islamic Life Conference.',
+        text: '"A Title Inspired by Serving Faith, Humanity, and the Nation" — the title of the 7th International Conference within the wider Islamic Life Conference, expressing its vision of serving faith, humanity, and the nation through research and intellectual dialogue.',
       },
     },
     objectives: {
@@ -576,7 +652,7 @@ export const content = {
       text: 'College of Islamic Sciences — University of Warith Al-Anbiyaa, under the patronage of the Al-Hussainiya Holy Shrine',
       linksTitle: 'Quick Links',
       contactTitle: 'Contact Us',
-      rights: 'computer center software division',
+      rights: 'computer center - software division',
     },
     ui: {
       themeToggle: 'Dark Mode',
