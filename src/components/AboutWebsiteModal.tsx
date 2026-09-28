@@ -75,7 +75,7 @@ export default function AboutWebsiteModal() {
 
 						<div className="space-y-5 px-6 py-7 text-base leading-relaxed text-slate-ink dark:text-ink-200 sm:px-8 sm:py-8">
 							{t.aboutWebsite.paragraphs.map((paragraph) => (
-								<p key={paragraph}>
+								<p key={paragraph} className="text-justify">
 									<HighlightedConferenceText text={paragraph} />
 								</p>
 							))}

@@ -33,5 +33,11 @@ export const sponsors: Sponsor[] = [
     url: 'https://uowa-new.uowa.edu.iq/arabic',
     logo: universityLogo,
   },
+  {
+    nameAr: 'كلية العلوم الإسلامية',
+    nameEn: 'College of Islamic Sciences',
+    url: 'https://uowa-new.uowa.edu.iq/arabic/islamic',
+    logo: universityLogo,
+  },
   // أضف بقية الجهات الداعمة هنا بنفس الطريقة عند الحاجة مستقبلاً.
 ]

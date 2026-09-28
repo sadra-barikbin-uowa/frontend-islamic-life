@@ -43,8 +43,8 @@ export const content = {
     },
     seventhConference: {
       editionBadge: 'المؤتمر الدولي السابع — الدورة الحالية',
-      editionTitle: 'المؤتمر الدولي السابع',
-      themeTitle: 'عنوان استقى وجوده من سبل خدمة الدين والإنسان والوطن',
+      editionTitle: 'مؤتمر الإسلام حياة العلمي السابع الموسوم بـ',
+      themeTitle: 'الإعلام وصناعة الوعي الجمعي في تعزيز مبادئ الحكم الرشيد',
       eyebrow: 'كلية العلوم الإسلامية — جامعة وارث الأنبياء (ع)',
       subtitle:
         'ضمن المسار العام لمؤتمر الإسلام حياة — ملتقى فكري وثقافي وأكاديمي يناقش قضايا الهوية والتعليم والمجتمع ، الإسلامي في مواجهة تحديات العصر، وبناء الإنسان وتنمية الحياة.',
@@ -69,32 +69,21 @@ export const content = {
       about: {
         vision: {
           title: 'الرؤية',
-          text: 'الريادة في بناء منصة علمية وفكرية عالمية تستحضر الرؤية الإسلامية المعاصرة لمعالجة قضايا الإنسان والمجتمع، وتعزيز القيم الإنسانية، واستشراف الحلول العلمية للتحديات المعاصرة بما يسهم في تحقيق التنمية المستدامة.',
+          text: '',
         },
         mission: {
           title: 'الرسالة',
-          text: 'تقديم منصة علمية رصينة تجمع الباحثين والمتخصصين لمناقشة القضايا المعاصرة من منظور إسلامي علمي منفتح، وتبادل المعرفة والخبرات، وإنتاج رؤى وتوصيات تسهم في بناء الإنسان وخدمة المجتمع وترسيخ قيم العدالة والسلام والمسؤولية والحكم الرشيد.',
+          text: '',
         },
         goals: {
           title: 'الشعار',
-          text: 'مؤتمر علمي وفكري يستلهم الرؤية الإسلامية المعاصرة، ويجمع الباحثين لإنتاج المعرفة والحلول والتوصيات التي تخدم الإنسان والمجتمع والوطن، وتعزز العدالة والسلام والمسؤولية والحكم الرشيد والتنمية المستدامة.',
+          text: '',
         },
       },
       objectives: {
         title: 'أهداف المؤتمر',
         subtitle: 'أهداف علمية ومجتمعية تسهم في خدمة الإنسان والمجتمع وترسيخ القيم الإسلامية والإنسانية',
-        items: [
-          { n: '01', title: 'تعزيز البحث العلمي', text: 'تعزيز البحث العلمي في القضايا الإسلامية والإنسانية والاجتماعية المعاصرة.' },
-          { n: '02', title: 'الرؤية الإسلامية المعاصرة', text: 'تقديم الرؤية الإسلامية المعاصرة في مواجهة التحديات الفكرية والاجتماعية والتنموية.' },
-          { n: '03', title: 'المعرفة في خدمة المجتمع', text: 'ربط البحث العلمي باحتياجات المجتمع وتحويل المعرفة إلى حلول وتوصيات قابلة للتطبيق.' },
-          { n: '04', title: 'الوعي والقيم', text: 'تعزيز الوعي الفردي والجمعي بالقيم الإسلامية والإنسانية وثقافة المسؤولية والمشاركة.' },
-          { n: '05', title: 'العدالة والحكم الرشيد', text: 'ترسيخ قيم العدالة والنزاهة والشفافية والمسؤولية والحكم الرشيد.' },
-          { n: '06', title: 'استشراف التحديات المستقبلية', text: 'استشراف التحديات المستقبلية وبناء رؤى علمية للتعامل معها.' },
-          { n: '07', title: 'الحوار العلمي والفكري', text: 'تعزيز الحوار العلمي والفكري بين الباحثين والمؤسسات الأكاديمية والمجتمعية.' },
-          { n: '08', title: 'توسيع الشراكات', text: 'توسيع الشراكات العلمية والمجتمعية محلياً وإقليمياً ودولياً.' },
-          { n: '09', title: 'دعم التنمية المستدامة', text: 'دعم أهداف التنمية المستدامة ذات الصلة بالسلام والعدل والمؤسسات والشراكات.' },
-          { n: '10', title: 'تفعيل أثر المؤتمر', text: 'تفعيل الأثر العلمي للمؤتمر من خلال متابعة توصياته وتحويلها إلى مبادرات وممارسات علمية ومجتمعية.' },
-        ],
+        items: [],
       },
     },
     hero: {
@@ -115,58 +104,38 @@ export const content = {
     about: {
       title: 'عن المؤتمر',
       lead:
-        'مؤتمر الإسلام حياة هو ملتقى فكري وثقافي وأكاديمي ومعرفي يجمع الباحثين والأكاديميين لمناقشة القضايا المعاصرة، واستكشاف دور الفكر الإسلام وقيمه في التعليم والمجتمع والتنمية الإنسانية، وبناء حوار علمي يربط المعرفة بواقع الإنسان وحاجاته.',
+        'مؤتمر الإسلام حياة هو ملتقى فكري وثقافي وأكاديمي ومعرفي يجمع الباحثين والأكاديميين لمناقشة القضايا المعاصرة، واستكشاف دور الفكر الإسلامي وقيمه في التعليم والمجتمع والتنمية الإنسانية، وبناء حوار علمي يربط المعرفة بواقع الإنسان وحاجاته.',
       partnersTitle: 'بالتعاون مع',
       cooperation: {
-        items: ['العتبة الحسينية المقدسة', 'جامعة وارث الأنبياء (ع)', 'كلية العلوم الإسلامية'],
+        items: ['العتبة الحسينية المقدسة', 'جامعة وارث الأنبياء (ع)'],
       },
       vision: {
         title: 'الرؤية',
-        text: 'أن يكون مؤتمر منبرًا علميًا رائدًا يرسّخ الهوية الإسلامية بوصفها منهج حياة، ويؤسس لحوار حضاري رصين بين الجامعات الإسلامية ونظيراتها حول العالم.',
+        text: 'الريادة في بناء منصة علمية وفكرية عالمية تستحضر الرؤية الإسلامية المعاصرة لمعالجة قضايا الإنسان والمجتمع، وتعزيز القيم الإنسانية، واستشراف الحلول العلمية للتحديات المعاصرة بما يسهم في تحقيق التنمية المستدامة.',
       },
       mission: {
         title: 'الرسالة',
-        text: 'توفير بيئة بحثية رصينة تُعنى بدراسة الهوية الإسلامية من جوانبها الفكرية والفقهية والاجتماعية، وربط الباحثين بشبكة علمية دولية فاعلة.',
+        text: 'تقديم منصة علمية رصينة تجمع الباحثين والمتخصصين لمناقشة القضايا المعاصرة من منظور إسلامي علمي منفتح، وتبادل المعرفة والخبرات، وإنتاج رؤى وتوصيات تسهم في بناء الإنسان وخدمة المجتمع وترسيخ قيم العدالة والسلام والمسؤولية والحكم الرشيد.',
       },
       goals: {
         title: 'الشعار',
-        text: '"عنوان استقى وجوده من سبل خدمة الدين والإنسان والوطن" — عنوان المؤتمر الدولي السابع ضمن المسار العام لمؤتمر الإسلام حياة، ويعبّر عن رؤيته في خدمة الدين والإنسان والوطن من خلال البحث العلمي والحوار الفكري.',
+        text: 'مؤتمر علمي وفكري يستلهم الرؤية الإسلامية المعاصرة، ويجمع الباحثين لإنتاج المعرفة والحلول والتوصيات التي تخدم الإنسان والمجتمع والوطن، وتعزز العدالة والسلام والمسؤولية والحكم الرشيد والتنمية المستدامة.',
       },
     },
     objectives: {
       title: 'أهداف مؤتمر',
       subtitle: 'محاور توجّه رسالة مؤتمر في ترسيخ الهوية الإسلامية ومواجهة تحديات العصر',
       items: [
-        {
-          n: '01',
-          title: 'الهوية منهجٌ ربّاني',
-          text: 'التركيز على الهوية الإسلامية بوصفها منهجًا ربانيًا وليست بديلاً معروضًا علينا ضمن بدائل أخرى نختار منها ما نشاء.',
-        },
-        {
-          n: '02',
-          title: 'التصوّر والسلوك معًا',
-          text: 'التأكيد على أن الهوية الإسلامية ليست موضوعًا نظريًا أو تجريديًا، وإنما هي نمط من التصور والسلوك معًا لا ينفك أحدهما عن الآخر؛ لأنها تفقد فاعليتها وتأثيرها إن لم تُجسَّد إلى واقع.',
-        },
-        {
-          n: '03',
-          title: 'مواجهة موضة العولمة',
-          text: 'التصدي لموضة العولمة التي هي في حقيقتها تذويب للهوية الخاصة في هوية واحدة هي هوية الأنموذج الغربي؛ فالهوية هي ما يحفظ سياج الشخصية، وبدونها يتحول الإنسان إلى كائن مقلِّد.',
-        },
-        {
-          n: '04',
-          title: 'تنمية الوعي بالهوية',
-          text: 'تنمية الوعي بحقيقة الهوية الإسلامية وأهميتها، وإيضاح ركائزها، والدعوة إلى تجسيد مبادئها إلى واقع، والدفاع عنها، ودعوة الآخر إليها.',
-        },
-        {
-          n: '05',
-          title: 'الحوار الثقافي مع الآخر',
-          text: 'تنشيط التفاعل والحوار الثقافي مع الثقافات الأخرى، بما يثري ثقافتنا الإسلامية، وفي الوقت نفسه تعريف الثقافات الأخرى بما لدينا من رصيد فكري وتراث عريق.',
-        },
-        {
-          n: '06',
-          title: 'مواجهة التحديات المعاصرة',
-          text: 'مواجهة التحديات المعاصرة التي تكتنف الهوية الإسلامية من مظاهر العولمة والغزو الثقافي وذوبان الهوية واستلابها.',
-        },
+          { n: '01', title: 'تعزيز البحث العلمي', text: 'تعزيز البحث العلمي في القضايا الإسلامية والإنسانية والاجتماعية المعاصرة.' },
+          { n: '02', title: 'الرؤية الإسلامية المعاصرة', text: 'تقديم الرؤية الإسلامية المعاصرة في مواجهة التحديات الفكرية والاجتماعية والتنموية.' },
+          { n: '03', title: 'المعرفة في خدمة المجتمع', text: 'ربط البحث العلمي باحتياجات المجتمع وتحويل المعرفة إلى حلول وتوصيات قابلة للتطبيق.' },
+          { n: '04', title: 'الوعي والقيم', text: 'تعزيز الوعي الفردي والجمعي بالقيم الإسلامية والإنسانية وثقافة المسؤولية والمشاركة.' },
+          { n: '05', title: 'العدالة والحكم الرشيد', text: 'ترسيخ قيم العدالة والنزاهة والشفافية والمسؤولية والحكم الرشيد.' },
+          { n: '06', title: 'استشراف التحديات المستقبلية', text: 'استشراف التحديات المستقبلية وبناء رؤى علمية للتعامل معها.' },
+          { n: '07', title: 'الحوار العلمي والفكري', text: 'تعزيز الحوار العلمي والفكري بين الباحثين والمؤسسات الأكاديمية والمجتمعية.' },
+          { n: '08', title: 'توسيع الشراكات', text: 'توسيع الشراكات العلمية والمجتمعية محلياً وإقليمياً ودولياً.' },
+          { n: '09', title: 'دعم التنمية المستدامة', text: 'دعم أهداف التنمية المستدامة ذات الصلة بالسلام والعدل والمؤسسات والشراكات.' },
+          { n: '10', title: 'تفعيل أثر المؤتمر', text: 'تفعيل الأثر العلمي للمؤتمر من خلال متابعة توصياته وتحويلها إلى مبادرات وممارسات علمية ومجتمعية.' },
       ],
     },
     rules: {
@@ -327,7 +296,7 @@ export const content = {
       close: 'إغلاق',
     },
     sponsors: {
-      title: 'الجهات الداعمة',
+      title: 'الجهاة الراعية',
       subtitle: 'برعاية وشراكة الجهتين الآتيتين',
     },
     venue: {
@@ -423,33 +392,22 @@ export const content = {
         'The 7th International Conference, under the title "A Title Inspired by Serving Faith, Humanity, and the Nation", presents a global scholarly and intellectual platform that brings a contemporary Islamic vision to addressing human and societal issues, advancing human values, and anticipating scientific solutions to contemporary challenges.',
       about: {
         vision: {
-          title: 'A Title Inspired by Serving Faith, Humanity, and the Nation',
-          text: 'Leading the development of a global scholarly and intellectual platform that brings a contemporary Islamic vision to addressing human and societal issues, advancing human values, and anticipating scientific solutions to contemporary challenges in support of sustainable development.',
+          title: 'Vision',
+          text: '',
         },
         mission: {
           title: 'Mission',
-          text: 'Providing a rigorous scholarly platform that brings together researchers and specialists to discuss contemporary issues from an open, scholarly Islamic perspective, exchange knowledge and expertise, and produce insights and recommendations that build people, serve society, and reinforce justice, peace, responsibility, and good governance.',
+          text: '',
         },
         goals: {
           title: 'Theme',
-          text: 'A scholarly and intellectual conference inspired by a contemporary Islamic vision, bringing researchers together to produce knowledge, solutions, and recommendations that serve people, society, and the nation while advancing justice, peace, responsibility, good governance, and sustainable development.',
+          text: '',
         },
       },
       objectives: {
         title: 'Conference Objectives',
         subtitle: 'Scholarly and social objectives that serve people and society while reinforcing Islamic and human values',
-        items: [
-          { n: '01', title: 'Advancing Research', text: 'Advancing scholarly research in contemporary Islamic, human, and social issues.' },
-          { n: '02', title: 'A Contemporary Islamic Vision', text: 'Presenting a contemporary Islamic vision for confronting intellectual, social, and developmental challenges.' },
-          { n: '03', title: 'Knowledge in Service of Society', text: 'Connecting research to society’s needs and turning knowledge into applicable solutions and recommendations.' },
-          { n: '04', title: 'Awareness and Values', text: 'Strengthening individual and collective awareness of Islamic and human values and a culture of responsibility and participation.' },
-          { n: '05', title: 'Justice and Good Governance', text: 'Entrenching the values of justice, integrity, transparency, responsibility, and good governance.' },
-          { n: '06', title: 'Anticipating Future Challenges', text: 'Anticipating future challenges and developing scholarly visions to address them.' },
-          { n: '07', title: 'Scholarly and Intellectual Dialogue', text: 'Strengthening scholarly and intellectual dialogue among researchers and academic and community institutions.' },
-          { n: '08', title: 'Expanding Partnerships', text: 'Expanding scholarly and community partnerships locally, regionally, and internationally.' },
-          { n: '09', title: 'Supporting Sustainable Development', text: 'Supporting sustainable development goals related to peace, justice, institutions, and partnerships.' },
-          { n: '10', title: 'Activating the Conference Impact', text: 'Activating the conference’s scholarly impact by following up on its recommendations and turning them into scholarly and community initiatives and practices.' },
-        ],
+        items: [],
       },
     },
     hero: {
@@ -477,27 +435,31 @@ export const content = {
       },
       vision: {
         title: 'Vision',
-        text: 'To be a leading scholarly platform that reinforces Islamic identity as a way of life, and a bridge for civilizational dialogue between Islamic universities and their counterparts worldwide.',
+        text: 'Leading the development of a global scholarly and intellectual platform that brings a contemporary Islamic vision to addressing human and societal issues, advancing human values, and anticipating scientific solutions to contemporary challenges in support of sustainable development.',
       },
       mission: {
         title: 'Mission',
-        text: 'To provide a rigorous research environment devoted to studying Islamic identity in its intellectual, jurisprudential, and social dimensions, connecting researchers to an active international scholarly network.',
+        text: 'Providing a rigorous scholarly platform that brings together researchers and specialists to discuss contemporary issues from an open, scholarly Islamic perspective, exchange knowledge and expertise, and produce insights and recommendations that build people, serve society, and reinforce justice, peace, responsibility, and good governance.',
       },
       goals: {
         title: 'Theme',
-        text: '"A Title Inspired by Serving Faith, Humanity, and the Nation" — the title of the 7th International Conference within the wider Islamic Life Conference, expressing its vision of serving faith, humanity, and the nation through research and intellectual dialogue.',
+        text: 'A scholarly and intellectual conference inspired by a contemporary Islamic vision, bringing researchers together to produce knowledge, solutions, and recommendations that serve people, society, and the nation while advancing justice, peace, responsibility, good governance, and sustainable development.',
       },
     },
     objectives: {
       title: 'Conference Objectives',
       subtitle: 'Pillars guiding the conference in reinforcing Islamic identity and confronting contemporary challenges',
       items: [
-        { n: '01', title: 'Identity as a Divine Method', text: 'Presenting Islamic identity as a divine method, not merely one option among others to be picked at will.' },
-        { n: '02', title: 'Perception and Conduct Together', text: 'Affirming that Islamic identity is not a theoretical or abstract topic, but a unified pattern of perception and conduct that loses its effect if not embodied in reality.' },
-        { n: '03', title: 'Confronting Globalization', text: 'Addressing the trend of globalization, which in essence dissolves distinct identities into a single Western model; identity is what preserves personal character, and without it a person becomes a mere imitator.' },
-        { n: '04', title: 'Raising Awareness of Identity', text: 'Raising awareness of Islamic identity and its importance, clarifying its foundations, and calling for embodying its principles, defending them, and inviting others to them.' },
-        { n: '05', title: 'Cultural Dialogue with Others', text: 'Activating cultural interaction and dialogue with other cultures, enriching our own while introducing others to our intellectual and cultural heritage.' },
-        { n: '06', title: 'Facing Contemporary Challenges', text: 'Confronting the contemporary challenges surrounding Islamic identity from globalization, cultural invasion, and identity dissolution.' },
+          { n: '01', title: 'Advancing Research', text: 'Advancing scholarly research in contemporary Islamic, human, and social issues.' },
+          { n: '02', title: 'A Contemporary Islamic Vision', text: 'Presenting a contemporary Islamic vision for confronting intellectual, social, and developmental challenges.' },
+          { n: '03', title: 'Knowledge in Service of Society', text: 'Connecting research to society’s needs and turning knowledge into applicable solutions and recommendations.' },
+          { n: '04', title: 'Awareness and Values', text: 'Strengthening individual and collective awareness of Islamic and human values and a culture of responsibility and participation.' },
+          { n: '05', title: 'Justice and Good Governance', text: 'Entrenching the values of justice, integrity, transparency, responsibility, and good governance.' },
+          { n: '06', title: 'Anticipating Future Challenges', text: 'Anticipating future challenges and developing scholarly visions to address them.' },
+          { n: '07', title: 'Scholarly and Intellectual Dialogue', text: 'Strengthening scholarly and intellectual dialogue among researchers and academic and community institutions.' },
+          { n: '08', title: 'Expanding Partnerships', text: 'Expanding scholarly and community partnerships locally, regionally, and internationally.' },
+          { n: '09', title: 'Supporting Sustainable Development', text: 'Supporting sustainable development goals related to peace, justice, institutions, and partnerships.' },
+          { n: '10', title: 'Activating the Conference Impact', text: 'Activating the conference’s scholarly impact by following up on its recommendations and turning them into scholarly and community initiatives and practices.' },
       ],
     },
     rules: {

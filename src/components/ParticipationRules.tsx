@@ -30,7 +30,7 @@ export default function ParticipationRules() {
 								<span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-gold-400/40 font-display text-sm text-gold-400">
 									{String(i + 1).padStart(2, "0")}
 								</span>
-								<p className="text-[26px] leading-relaxed text-ink-100">
+								<p className="text-justify text-[26px] leading-relaxed text-ink-100">
 									{rule}
 								</p>
 							</div>
@@ -41,7 +41,7 @@ export default function ParticipationRules() {
 				<Reveal delay={t.rules.items.length * 70 + 80} className="mt-8">
 					<div
 						role="status"
-						className="flex items-center gap-4 rounded-xl border-2 border-gold-400/70 bg-gold-500/15 px-6 py-5 text-base font-bold leading-relaxed text-gold-100 shadow-[0_10px_35px_rgba(201,166,92,0.14)] sm:px-7 sm:py-6 sm:text-lg"
+						className="flex items-center gap-4 rounded-xl border-2 border-gold-400/70 bg-gold-500/15 px-6 py-5 text-base text-justify font-bold leading-relaxed text-gold-100 shadow-[0_10px_35px_rgba(201,166,92,0.14)] sm:px-7 sm:py-6 sm:text-lg"
 					>
 						<span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-gold-300/60 bg-gold-400/20">
 							<ShieldCheck

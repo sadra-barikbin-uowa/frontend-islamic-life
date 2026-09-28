@@ -12,7 +12,7 @@ export default function FAQ() {
 					<h2 className="font-display text-3xl leading-tight text-ink-900 dark:text-paper sm:text-4xl">
 						{t.faq.title}
 					</h2>
-					<p className="mt-3 text-base leading-relaxed text-slate-ink dark:text-ink-200">
+					<p className="mt-3 text-justify text-base leading-relaxed text-slate-ink dark:text-ink-200">
 						{t.faq.subtitle}
 					</p>
 				</Reveal>

@@ -23,7 +23,7 @@ export default function ConferenceInfo() {
 										<p className="text-base font-semibold leading-tight text-ink-700 dark:text-ink-100 sm:text-lg">
 											{item.label}
 										</p>
-										<p className="mt-2 whitespace-pre-line font-display text-lg leading-snug text-ink-900 dark:text-paper sm:text-xl">
+										<p className="mt-2 whitespace-pre-line text-justify font-display text-lg leading-snug text-ink-900 dark:text-paper sm:text-xl">
 											{item.value}
 										</p>
 									</div>

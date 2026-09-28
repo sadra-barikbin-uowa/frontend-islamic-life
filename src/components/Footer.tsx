@@ -55,7 +55,7 @@ export default function Footer() {
 								</span>
 							</span>
 						</div>
-						<p className="mt-5 max-w-xs text-sm leading-relaxed text-ink-200">
+						<p className="mt-5 max-w-xs text-justify text-sm leading-relaxed text-ink-200">
 							{t.footer.text}
 						</p>
 					</div>
@@ -104,7 +104,7 @@ export default function Footer() {
 							) : null}
 							<div className="flex items-start gap-3 text-sm leading-relaxed text-ink-200">
 								<MapPin size={15} className="mt-1 shrink-0 text-gold-400" />
-								<span>{t.contact.info.address}</span>
+								<span className="text-justify">{t.contact.info.address}</span>
 							</div>
 						</div>
 						<div className="mt-5 flex gap-3">

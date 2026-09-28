@@ -162,7 +162,9 @@ export default function Navbar() {
 						<span className="block whitespace-nowrap" dir={t.dir}>
 							{t.header.university}
 						</span>
-						<span className="mt-0.5 block whitespace-nowrap text-[0.86em] opacity-75">
+						<span
+							className={`mt-0.5 block whitespace-nowrap text-[0.86em] font-bold transition-colors ${scrolled ? scrolledTextClass : "text-white"}`}
+						>
 							{t.header.college}
 						</span>
 						<span
@@ -635,7 +637,9 @@ export default function Navbar() {
 										<p className="text-xs font-medium text-gold-600 dark:text-gold-400">
 											{lang === "ar" ? "ملاحظات" : "Notes"}
 										</p>
-										<p className="mt-1">{selectedPreviousVersion.notes}</p>
+										<p className="mt-1 text-justify">
+											{selectedPreviousVersion.notes}
+										</p>
 									</div>
 									<div className="flex justify-end border-t border-ink-900/10 pt-5 dark:border-paper/10">
 										<button

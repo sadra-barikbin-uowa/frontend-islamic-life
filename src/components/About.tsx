@@ -20,7 +20,7 @@ export default function About() {
 								{t.about.title}
 							</h2>
 							<div className="rule mt-6 w-24 text-ink-900 dark:text-paper" />
-							<p className="mt-6 max-w-md text-base leading-relaxed text-slate-ink dark:text-ink-200">
+							<p className="mt-6 max-w-md text-justify text-base leading-relaxed text-slate-ink dark:text-ink-200">
 								<HighlightedConferenceText text={t.about.lead} />
 							</p>
 						</Reveal>
@@ -53,7 +53,7 @@ export default function About() {
 										<h3 className="mt-4 font-display text-lg text-ink-900 dark:text-paper">
 											{b.title}
 										</h3>
-										<p className="mt-3 text-sm leading-relaxed text-slate-ink dark:text-ink-200">
+										<p className="mt-3 text-justify text-sm leading-relaxed text-slate-ink dark:text-ink-200">
 											{b.text}
 										</p>
 									</div>

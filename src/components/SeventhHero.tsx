@@ -74,8 +74,17 @@ export default function SeventhHero() {
 					transition={{ duration: 0.8, ease, delay: 0.2 }}
 					className="font-display max-w-5xl text-3xl leading-[1.2] text-paper sm:text-5xl lg:text-6xl"
 				>
-					<span className="block text-paper">{content.editionTitle}</span>
-					<span className="mt-2 block bg-gradient-to-r from-gold-300 via-gold-400 to-amber-200 bg-clip-text text-transparent">
+					<span className="block text-paper">
+						{lang === "ar" ? (
+							<>
+								مؤتمر <span className="text-green-400">الإسلام حياة</span>
+								العلمي السابع الموسوم بـ
+							</>
+						) : (
+							content.editionTitle
+						)}
+					</span>
+					<span className="mt-2 block leading-[1.55] bg-gradient-to-r from-gold-300 via-gold-400 to-amber-200 bg-clip-text text-transparent">
 						«{content.themeTitle}»
 					</span>
 				</motion.h1>
@@ -84,7 +93,7 @@ export default function SeventhHero() {
 					initial={{ opacity: 0, y: 16 }}
 					animate={{ opacity: 1, y: 0 }}
 					transition={{ duration: 0.8, ease, delay: 0.35 }}
-					className="mt-6 max-w-2xl text-base leading-relaxed text-ink-100 sm:text-lg"
+					className="mt-6 max-w-2xl text-justify text-base leading-relaxed text-ink-100 sm:text-lg"
 				>
 					{content.subtitle}
 				</motion.p>

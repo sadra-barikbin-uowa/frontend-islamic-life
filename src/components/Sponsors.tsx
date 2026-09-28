@@ -19,7 +19,7 @@ export default function Sponsors() {
 					</div>
 				</Reveal>
 
-				<div className="mt-12 grid items-start gap-8 sm:grid-cols-2 lg:gap-10">
+				<div className="mt-12 grid items-start gap-8 sm:grid-cols-2 lg:grid-cols-3 lg:gap-10">
 					{sponsors.map((sponsor, i) => {
 						const sponsorName = lang === "ar" ? sponsor.nameAr : sponsor.nameEn;
 						const card = sponsor.logo ? (

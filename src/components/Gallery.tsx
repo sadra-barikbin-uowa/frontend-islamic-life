@@ -73,7 +73,7 @@ export default function Gallery() {
 						<h2 className="font-display text-3xl text-ink-900 dark:text-paper sm:text-4xl">
 							{t.gallery.title}
 						</h2>
-						<p className="mt-3 text-base text-slate-ink dark:text-ink-200">
+						<p className="mt-3 text-justify text-base text-slate-ink dark:text-ink-200">
 							<HighlightedConferenceText text={t.gallery.subtitle} />
 						</p>
 					</div>

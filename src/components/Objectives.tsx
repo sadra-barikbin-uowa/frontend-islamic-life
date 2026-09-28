@@ -21,7 +21,7 @@ export default function Objectives({
 						<h2 className="font-display text-3xl leading-tight sm:text-4xl">
 							{content.title}
 						</h2>
-						<p className="mt-3 text-base leading-relaxed text-ink-200">
+						<p className="mt-3 text-justify text-base leading-relaxed text-ink-200">
 							{content.subtitle}
 						</p>
 					</div>
@@ -37,7 +37,7 @@ export default function Objectives({
 								<h3 className="mt-4 font-display text-xl leading-snug">
 									{item.title}
 								</h3>
-								<p className="mt-3 text-base leading-relaxed text-ink-200">
+								<p className="mt-3 text-justify text-base leading-relaxed text-ink-200">
 									{item.text}
 								</p>
 							</div>
