@@ -89,8 +89,8 @@ export const content = {
     hero: {
       eyebrow: 'كلية العلوم الإسلامية — جامعة وارث الأنبياء',
       title: 'مؤتمر الإسلام حياة',
-      subtitle:
-        'مؤتمر فكري وثقافي وأكاديمي ومعرفي يناقش قضايا العصر، ودور الفكر والقيم والتعليم والمجتمع الإسلام في بناء الإنسان وتنمية الحياة.',
+themeTitle: '« عنوانٌ استمدّ وجوده من سبل خدمة الدين والإنسان والوطن» ',
+      subtitle:'مؤتمر فكري وثقافي وأكاديمي ومعرفي يناقش قضايا العصر، ودور الفكر والقيم والتعليم والمجتمع الإسلام في بناء الإنسان وتنمية الحياة.',
       ctaPrimary: 'قدّم بحثك',
       ctaSecondary: 'تعرّف على مؤتمر',
       dateLine: '2026 – 1448 · كربلاء المقدسة، جامعة وارث الأنبياء',
@@ -413,6 +413,7 @@ export const content = {
     hero: {
       eyebrow: 'College of Islamic Sciences — Warith Al-Anbiyaa University',
       title: 'Islamic Life Conference',
+      themeTitle: 'A Title Inspired by Serving Faith, Humanity, and the Nation',
       subtitle:
         'An intellectual, cultural, academic, and knowledge-oriented conference discussing contemporary issues and the role of Islamic thought, values, education, society, and human development.',
       ctaPrimary: 'Submit Your Paper',

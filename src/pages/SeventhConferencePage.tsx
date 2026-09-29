@@ -9,7 +9,6 @@ import ParticipationRules from "../components/ParticipationRules";
 import Committees from "../components/Committees";
 import CallForPapers from "../components/CallForPapers";
 import FAQ from "../components/FAQ";
-import Gallery from "../components/Gallery";
 import Sponsors from "../components/Sponsors";
 import VenueSection from "../components/Venue";
 import Footer from "../components/Footer";
@@ -51,7 +50,6 @@ export default function SeventhConferencePage() {
 					<FAQ />
 					<CallForPapers />
 				</div>
-				<Gallery />
 				<Sponsors />
 				<VenueSection />
 			</main>

@@ -70,7 +70,7 @@ export default function Hero() {
 						<span className="flex h-2 w-2 rounded-full bg-gold-400 animate-pulse" />
 						<span>
 							{lang === "ar"
-								? "النسخة الحالية: المؤتمر الدولي السابع «عنوان استقى وجوده من سبل خدمة الدين والإنسان والوطن»"
+								? "النسخة الحالية: المؤتمر الدولي السابع «الإعلام وصناعة الوعي الجمعي في تعزيز مبادئ الحكم الرشيد»"
 								: "Current Edition: The 7th International Conference «A Title Inspired by Serving Faith, Humanity, and the Nation»"}
 						</span>
 						{lang === "ar" ? (
@@ -98,6 +98,15 @@ export default function Hero() {
 				>
 					<ConferenceName greenClassName="text-green-400" />
 				</motion.h1>
+
+				<motion.h2
+					initial={{ opacity: 0, y: 16 }}
+					animate={{ opacity: 1, y: 0 }}
+					transition={{ duration: 0.8, ease, delay: 0.3 }}
+					className="mt-4 max-w-3xl font-display text-xl leading-relaxed text-gold-300 sm:text-2xl"
+				>
+					{t.hero.themeTitle}
+				</motion.h2>
 
 				<motion.p
 					initial={{ opacity: 0, y: 16 }}
