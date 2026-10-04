@@ -2,9 +2,11 @@ import { useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { X } from "lucide-react";
 import { useApp } from "../context/AppContext";
+import ConferenceLogo from "./ConferenceLogo";
 
 const COUNTDOWN_AUDIO = "/audio/" + encodeURIComponent("عد تنازلي.mp3");
 const INTRO_AUDIO = "/audio/" + encodeURIComponent("من العراق.mp3");
+const LOGO_DISPLAY_DURATION = 3000;
 const FINAL_MESSAGE_DURATION = 18000;
 
 function stopAudio(audioRef: { current: HTMLAudioElement | null }) {
@@ -28,7 +30,7 @@ const COUNTDOWN_WORDS = [
 	"واحد",
 ];
 
-type CountdownPhase = "counting" | "message";
+type CountdownPhase = "counting" | "logo" | "message";
 
 const INTRO_LINES = [
 	"مِنَ  العِرَاقِ  مَهْدِ  الحَضَارَاتِ،",
@@ -78,6 +80,20 @@ export default function CountdownModal() {
 	}, [count, countdownOpen, phase]);
 
 	useEffect(() => {
+		if (!countdownOpen || phase !== "logo") return;
+
+		const timer = window.setTimeout(() => {
+			const introAudio = new Audio(INTRO_AUDIO);
+			introAudio.preload = "auto";
+			introAudioRef.current = introAudio;
+			introAudio.play().catch(() => undefined);
+			setPhase("message");
+		}, LOGO_DISPLAY_DURATION);
+
+		return () => window.clearTimeout(timer);
+	}, [countdownOpen, phase]);
+
+	useEffect(() => {
 		if (!countdownOpen || phase !== "message") return;
 
 		const timer = window.setTimeout(closeCountdown, FINAL_MESSAGE_DURATION);
@@ -101,11 +117,7 @@ export default function CountdownModal() {
 			countdownAudio.removeEventListener("error", handleCountdownAudioEnded);
 			countdownAudioRef.current = null;
 
-			const introAudio = new Audio(INTRO_AUDIO);
-			introAudio.preload = "auto";
-			introAudioRef.current = introAudio;
-			introAudio.play().catch(() => undefined);
-			setPhase("message");
+			setPhase("logo");
 		};
 
 		countdownEndedHandlerRef.current = handleCountdownAudioEnded;
@@ -184,7 +196,7 @@ export default function CountdownModal() {
 					animate={{ opacity: 1 }}
 					exit={{ opacity: 0 }}
 					transition={{ duration: 0.3 }}
-					className="fixed inset-0 z-[100] flex min-h-screen items-center justify-center overflow-y-auto bg-ink-950/95 px-5 py-8 backdrop-blur-md"
+					className="fixed inset-0 z-[100] flex h-[100svh] min-h-[100svh] items-center justify-center overflow-hidden bg-ink-950/95 px-4 py-6 backdrop-blur-md"
 					dir="rtl"
 				>
 					<div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_50%_35%,rgba(99,102,241,0.24),transparent_35%),radial-gradient(circle_at_15%_80%,rgba(168,85,247,0.16),transparent_30%),radial-gradient(circle_at_85%_15%,rgba(201,166,92,0.12),transparent_28%)]" />
@@ -201,7 +213,7 @@ export default function CountdownModal() {
 						<span>إغلاق</span>
 					</button>
 
-					<div className="relative z-10 flex w-full max-w-2xl flex-col items-center justify-center text-center">
+					<div className="relative z-10 flex w-full max-w-5xl flex-col items-center justify-center text-center">
 						<AnimatePresence mode="wait">
 							{phase === "counting" && (
 								<motion.div
@@ -241,43 +253,70 @@ export default function CountdownModal() {
 								</motion.div>
 							)}
 
-							{phase === "message" && (
+							{phase !== "counting" && (
 								<motion.div
-									key="message"
-									initial={{ opacity: 0, scale: 0.96 }}
-									animate={{ opacity: 1, scale: 1 }}
-									transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
-									className="relative flex max-w-4xl flex-col items-center px-3 text-center font-display text-xl font-bold leading-[1.9] text-paper/95 sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl sm:leading-[1.95]"
+									key="presentation"
+									className="relative h-[calc(100svh-3rem)] max-h-[46rem] w-full max-w-5xl"
 								>
-									<div className="pointer-events-none absolute inset-x-1/4 top-1/3 h-40 rounded-full bg-emerald-500/10 blur-3xl" />
-									<div className="relative">
-										{INTRO_LINES.map((line, index) => (
-											<motion.p
-												key={line}
-												initial={{ opacity: 0, y: 12 }}
-												animate={{ opacity: 1, y: 0 }}
-												transition={{
-													duration: 0.6,
-													delay: 0.25 + index * 0.2,
-												}}
-												className="mb-2 sm:mb-3"
-											>
-												{line}
-											</motion.p>
-										))}
-										<motion.p
-											initial={{ opacity: 0, y: 18, scale: 0.94 }}
-											animate={{ opacity: 1, y: 0, scale: 1 }}
-											transition={{
-												duration: 1,
-												delay: 1.55,
-												ease: [0.16, 1, 0.3, 1],
-											}}
-											className="mt-3 text-2xl font-extrabold text-emerald-400 drop-shadow-[0_0_18px_rgba(52,211,153,0.45)] sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl"
+									<motion.div
+										initial={{
+											opacity: 0,
+											scale: 0.82,
+											top: "50%",
+											x: "-50%",
+											y: "-50%",
+										}}
+										animate={{
+											opacity: 1,
+											top: phase === "message" ? "3%" : "50%",
+											x: "-50%",
+											y: phase === "message" ? "0%" : "-50%",
+											scale: phase === "message" ? 0.62 : 1,
+										}}
+										transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
+										className="absolute left-1/2 flex h-[clamp(15rem,55vw,24rem)] w-[clamp(15rem,55vw,24rem)] items-center justify-center"
+									>
+										<ConferenceLogo className="h-4/5 w-4/5 drop-shadow-[0_0_35px_rgba(201,166,92,0.3)]" />
+									</motion.div>
+
+									{phase === "message" && (
+										<motion.div
+											initial={{ opacity: 0, y: 18 }}
+											animate={{ opacity: 1, y: 0 }}
+											transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
+											className="absolute inset-x-0 top-[37%] px-3 text-center font-display text-[clamp(1.05rem,2.7vh,1.65rem)] font-bold leading-[1.4] text-paper/95"
 										>
-											الإِسْلَامُ حَيَاةٌ
-										</motion.p>
-									</div>
+											<div className="pointer-events-none absolute inset-x-1/4 top-1/3 h-40 rounded-full bg-emerald-500/10 blur-3xl" />
+											<div className="relative">
+												{INTRO_LINES.map((line, index) => (
+													<motion.p
+														key={line}
+														initial={{ opacity: 0, y: 12 }}
+														animate={{ opacity: 1, y: 0 }}
+														transition={{
+															duration: 0.6,
+															delay: 0.25 + index * 0.2,
+														}}
+														className="mb-1"
+													>
+														{line}
+													</motion.p>
+												))}
+												<motion.p
+													initial={{ opacity: 0, y: 18, scale: 0.94 }}
+													animate={{ opacity: 1, y: 0, scale: 1 }}
+													transition={{
+														duration: 1,
+														delay: 1.55,
+														ease: [0.16, 1, 0.3, 1],
+													}}
+													className="mt-2 text-xl font-extrabold text-emerald-400 drop-shadow-[0_0_18px_rgba(52,211,153,0.45)] sm:text-2xl md:text-3xl"
+												>
+													الإِسْلَامُ حَيَاةٌ
+												</motion.p>
+											</div>
+										</motion.div>
+									)}
 								</motion.div>
 							)}
 						</AnimatePresence>
