@@ -9,6 +9,7 @@ import CallForPapers from "../components/CallForPapers";
 import FAQ from "../components/FAQ";
 import Gallery from "../components/Gallery";
 import Sponsors from "../components/Sponsors";
+import AwardsSection from "../components/AwardsSection";
 import VenueSection from "../components/Venue";
 import Footer from "../components/Footer";
 import { useApp } from "../context/AppContext";
@@ -37,6 +38,7 @@ export default function HomePage() {
 				</div>
 				<Gallery />
 				<Sponsors />
+				<AwardsSection />
 				<VenueSection />
 			</main>
 			<Footer />

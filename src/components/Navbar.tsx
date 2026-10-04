@@ -145,19 +145,15 @@ export default function Navbar() {
 		>
 			<div
 				dir={t.dir}
-				className="mx-auto flex w-full max-w-[90rem] items-center gap-3 px-3 py-3 sm:gap-4 sm:px-5 sm:py-4 lg:gap-5 lg:px-8"
+				className="mx-auto flex w-full max-w-[100rem] items-center gap-3 px-3 py-3 sm:gap-4 sm:px-5 sm:py-4 lg:gap-5 lg:px-8"
 			>
 				<button
 					onClick={handleBrandClick}
-					className={`flex min-w-0 shrink-0 items-center gap-2.5 whitespace-nowrap text-start sm:gap-3 min-[1400px]:w-[12rem] ${
-						lang === "en"
-							? "min-[1400px]:-ms-8 min-[1400px]:me-20"
-							: "min-[1400px]:me-12"
-					}`}
+					className="flex min-w-0 shrink-0 items-center gap-2.5 whitespace-nowrap text-start sm:gap-3 min-[1600px]:w-[12rem]"
 				>
 					<ConferenceLogo className="h-14 w-14 shrink-0 sm:h-16 sm:w-16" />
 					<span
-						className={`min-w-0 text-[11px] font-medium leading-tight transition-colors sm:text-[16px] min-[1400px]:text-[14px] ${scrolled ? scrolledTextClass : "text-paper"}`}
+						className={`min-w-0 text-[11px] font-medium leading-tight transition-colors sm:text-[16px] min-[1600px]:text-[14px] ${scrolled ? scrolledTextClass : "text-paper"}`}
 					>
 						<span className="block whitespace-nowrap" dir={t.dir}>
 							{t.header.university}
@@ -185,7 +181,7 @@ export default function Navbar() {
 					</span>
 				</button>
 
-				<nav className="hidden min-w-0 flex-1 items-center justify-center gap-3 min-[1400px]:flex min-[1400px]:gap-3">
+				<nav className="hidden min-w-0 flex-1 items-center justify-center gap-2 min-[1600px]:flex">
 					{activeLinks.map((link) => (
 						<button
 							key={link.id}
@@ -265,7 +261,7 @@ export default function Navbar() {
 					className="flex shrink-0 items-center justify-end gap-2"
 					dir={lang === "ar" ? "rtl" : "ltr"}
 				>
-					<div className="hidden items-center gap-2 min-[1400px]:flex">
+					<div className="hidden items-center gap-2 min-[1600px]:flex">
 						<button
 							type="button"
 							onClick={handleCountdownOpen}
@@ -390,13 +386,13 @@ export default function Navbar() {
 					</button>
 					<button
 						onClick={openSubmission}
-						className={`hidden min-w-[9.5rem] whitespace-nowrap rounded-full bg-gold-500 px-6 py-2 text-[16px] font-medium transition-colors hover:bg-gold-400 min-[1400px]:block ${theme === "dark" ? "text-white" : "text-ink-950"}`}
+						className={`hidden min-w-[9.5rem] whitespace-nowrap rounded-full bg-gold-500 px-6 py-2 text-[16px] font-medium transition-colors hover:bg-gold-400 min-[1600px]:block ${theme === "dark" ? "text-white" : "text-ink-950"}`}
 					>
 						{t.nav.submit}
 					</button>
 					<button
 						onClick={() => setOpen((v) => !v)}
-						className={`flex h-9 w-9 items-center justify-center rounded-full border min-[1400px]:hidden ${
+						className={`flex h-9 w-9 items-center justify-center rounded-full border min-[1600px]:hidden ${
 							scrolled
 								? `border-ink-900/15 ${scrolledTextClass}`
 								: "border-paper/50 text-paper"
@@ -409,7 +405,7 @@ export default function Navbar() {
 			</div>
 
 			{open && (
-				<div className="border-t border-ink-900/10 bg-paper px-5 py-4 dark:border-paper/10 dark:bg-ink-950 min-[1400px]:hidden">
+				<div className="border-t border-ink-900/10 bg-paper px-5 py-4 dark:border-paper/10 dark:bg-ink-950 min-[1600px]:hidden">
 					<div className="flex flex-col gap-1">
 						{activeLinks.map((link) => (
 							<button

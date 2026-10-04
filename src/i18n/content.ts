@@ -51,7 +51,15 @@ export const content = {
       ctaPrimary: 'قدّم بحثك إلى المؤتمر الدولي السابع',
       ctaRules: 'شروط استلام البحث',
       ctaCommittees: 'اللجان المشرفة',
-      dateLine: '2026 – 1448 · كربلاء المقدسة، جامعة وارث الأنبياء (ع)',
+      dateLine: '28/11/2026 · كربلاء المقدسة، جامعة وارث الأنبياء (ع)',
+      schedule: {
+        title: 'مواعيد المؤتمر',
+        items: [
+          { label: 'استلام البحوث', date: '1/9/2026 – 20/10/2026' },
+          { label: 'إشعار الباحثين بقبول أبحاثهم', date: '1/11/2026 – 20/11/2026' },
+          { label: 'إقامة المؤتمر', date: '28/11/2026' },
+        ],
+      },
       currentVersionBadge: 'النسخة السابعة',
       backToPortal: 'المؤتمر العام',
       navLinks: [
@@ -121,7 +129,7 @@ themeTitle: '« عنوانٌ استمدّ وجوده من سبل خدمة الد
       dateLine: '2026 – 1448 · كربلاء المقدسة، جامعة وارث الأنبياء',
     },
     info: [
-      { label: 'التاريخ', value: '2026 – 1448' },
+      { label: 'موعد المؤتمر', value: '28/11/2026' },
       { label: 'مكان الانعقاد', value: 'كربلاء المقدسة - جامعة وارث الأنبياء' },
       { label: 'الجهة المقيمة', value: 'كلية العلوم الإسلامية' },
       { label: 'الراعي الرسمي', value: 'العتبة الحسينية المقدسة\nجامعة وارث الأنبياء' },
@@ -181,9 +189,9 @@ themeTitle: '« عنوانٌ استمدّ وجوده من سبل خدمة الد
       subtitle: 'إجابات عن أكثر الأسئلة تكرارًا حول مؤتمر',
       items: [
         { q: 'أين يُقام المؤتمر؟', a: 'يُقام مؤتمر في مقر جامعة وارث الأنبياء بمدينة كربلاء المقدسة، برعاية العتبة الحسينية المقدسة ورئاسة جامعة وارث الأنبياء.' },
-        { q: 'متى آخر موعد لاستلام ملخصات البحوث؟', a: 'يُعلن الموعد النهائي لاستلام الملخصات عبر القنوات الرسمية للمؤتمر، ويُنصح المشاركون بالتقديم في أقرب وقت ممكن.' },
-        { q: 'متى آخر موعد لاستلام البحوث بصيغتها النهائية؟', a: 'يُحدَّد هذا الموعد لاحقًا، ويُعلن عبر موقع مؤتمر ووسائل التواصل الرسمية.' },
-        { q: 'متى يُعقد مؤتمر؟', a: 'يُعلن موعد انعقاد مؤتمر رسميًا عبر الموقع والقنوات الرسمية للجامعة والعتبة الحسينية المقدسة.' },
+        { q: 'متى تُستلم البحوث؟', a: 'يبدأ استلام البحوث في 1/9/2026 ويستمر حتى 20/10/2026.' },
+        { q: 'متى يُبلَّغ الباحثون بقبول أبحاثهم؟', a: 'يُشعَر الباحثون بقبول أبحاثهم خلال الفترة من 1/11/2026 إلى 20/11/2026.' },
+        { q: 'متى يُقام المؤتمر؟', a: 'يُقام المؤتمر في 28/11/2026.' },
         { q: 'أين تُنشر البحوث؟', a: 'تُنشر البحوث المقبولة بعد استكمال إجراءات التحكيم العلمي ضمن الإصدارات العلمية الخاصة بمؤتمر.' },
       ],
     },
@@ -285,7 +293,7 @@ themeTitle: '« عنوانٌ استمدّ وجوده من سبل خدمة الد
     cfp: {
       title: 'الدعوة لتقديم البحوث',
       text: 'ندعو الباحثين والأكاديميين وطلبة الدراسات العليا إلى تقديم بحوثهم الأصيلة وغير المنشورة سابقًا حول قضايا الفكر والقيم والتعليم والمجتمع والتنمية الإنسانية، وفق ضوابط المشاركة المعتمدة.',
-      deadline: 'تُعلن المواعيد التفصيلية للتقديم عبر القنوات الرسمية للمؤتمر',
+      deadline: 'يُستقبل البحث من 1/9/2026 إلى 20/10/2026',
       cta: 'قدّم بحثك الآن',
     },
     submission: {
@@ -323,6 +331,19 @@ themeTitle: '« عنوانٌ استمدّ وجوده من سبل خدمة الد
     sponsors: {
       title: 'الجهاة الراعية',
       subtitle: 'برعاية وشراكة الجهتين الآتيتين',
+    },
+    awards: {
+      title: 'الجوائز والتكريمات',
+      subtitle: 'نفخر بما حققناه من إنجازات وتكريمات تعكس مسيرتنا نحو التميز.',
+      sampleData: 'أمثلة تجريبية: استبدلها ببيانات الجوائز الفعلية قبل النشر',
+      sampleBadge: 'بيانات تجريبية',
+      filterLabel: 'تصفية الجوائز حسب السنة',
+      allYears: 'الكل',
+      organizationLabel: 'الجهة المانحة',
+      yearLabel: 'السنة',
+      categoryLabel: 'الفئة',
+      viewDetails: 'عرض التفاصيل',
+      close: 'إغلاق التفاصيل',
     },
     venue: {
       title: 'مكان الانعقاد',
@@ -400,7 +421,15 @@ themeTitle: '« عنوانٌ استمدّ وجوده من سبل خدمة الد
       ctaPrimary: 'Submit Paper for 7th Edition',
       ctaRules: 'Paper Submission Requirements',
       ctaCommittees: 'Committees',
-      dateLine: '2026 – 1448 AH · Karbala, Iraq · Warith Al-Anbiyaa University',
+      dateLine: '28 Nov 2026 · Karbala, Iraq · Warith Al-Anbiyaa University',
+      schedule: {
+        title: 'Conference Dates',
+        items: [
+          { label: 'Research paper submission', date: '1 Sep 2026 – 20 Oct 2026' },
+          { label: 'Acceptance notifications', date: '1 Nov 2026 – 20 Nov 2026' },
+          { label: 'Conference', date: '28 Nov 2026' },
+        ],
+      },
       currentVersionBadge: '7th Edition',
       backToPortal: 'Main Portal',
       navLinks: [
@@ -460,7 +489,7 @@ themeTitle: '« عنوانٌ استمدّ وجوده من سبل خدمة الد
       dateLine: '2022 CE – 1444 AH · Karbala, Iraq',
     },
     info: [
-      { label: 'Date', value: '2022 CE – 1444 AH' },
+      { label: 'Conference Date', value: '28 Nov 2026' },
       { label: 'Venue', value: 'Karbala, Iraq' },
       { label: 'Host', value: 'College of Islamic Sciences' },
       { label: 'Official Sponsor', value: 'Al-Hussainiya Holy Shrine\nUniversity of Warith Al-Anbiyaa' },
@@ -520,9 +549,9 @@ themeTitle: '« عنوانٌ استمدّ وجوده من سبل خدمة الد
       subtitle: 'Answers to the most frequently asked questions about the conference',
       items: [
         { q: 'Where is the conference held?', a: 'The conference is held at the University of Warith Al-Anbiyaa in the holy city of Karbala, under the patronage of the Al-Hussainiya Holy Shrine.' },
-        { q: 'What is the deadline for abstract submission?', a: 'The final deadline for abstracts will be announced through the conference\u2019s official channels; early submission is recommended.' },
-        { q: 'What is the deadline for the final paper?', a: 'This deadline will be set and announced later via the conference website and official channels.' },
-        { q: 'When is the conference held?', a: 'The conference date is officially announced through the website and the official channels of the university and the Al-Hussainiya Holy Shrine.' },
+        { q: 'When are research papers accepted?', a: 'Research papers are accepted from 1 September 2026 through 20 October 2026.' },
+        { q: 'When will authors be notified of acceptance?', a: 'Authors will be notified between 1 November 2026 and 20 November 2026.' },
+        { q: 'When is the conference?', a: 'The conference will be held on 28 November 2026.' },
         { q: 'Where are the papers published?', a: 'Accepted papers are published, after the peer-review process is completed, in the conference\u2019s scholarly publications.' },
       ],
     },
@@ -599,7 +628,7 @@ themeTitle: '« عنوانٌ استمدّ وجوده من سبل خدمة الد
     cfp: {
       title: 'Call for Papers',
       text: 'We invite researchers, academics, and graduate students to submit original, previously unpublished research on thought, values, education, society, and human development, in accordance with the approved participation rules.',
-      deadline: 'Detailed submission dates will be announced via the conference\u2019s official channels',
+      deadline: 'Research papers are accepted from 1 September 2026 through 20 October 2026',
       cta: 'Submit Your Paper Now',
     },
     submission: {
@@ -637,6 +666,19 @@ themeTitle: '« عنوانٌ استمدّ وجوده من سبل خدمة الد
     sponsors: {
       title: 'Sponsors',
       subtitle: 'Held under the patronage and partnership of the following',
+    },
+    awards: {
+      title: 'Awards & Recognition',
+      subtitle: 'We are proud of achievements and honors that reflect our journey toward excellence.',
+      sampleData: 'Sample entries: replace with verified awards before publishing',
+      sampleBadge: 'Sample data',
+      filterLabel: 'Filter awards by year',
+      allYears: 'All',
+      organizationLabel: 'Awarding organization',
+      yearLabel: 'Year',
+      categoryLabel: 'Category',
+      viewDetails: 'View details',
+      close: 'Close details',
     },
     venue: {
       title: 'Venue',

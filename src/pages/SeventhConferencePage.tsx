@@ -3,6 +3,7 @@ import { ArrowUp } from "lucide-react";
 import Navbar from "../components/Navbar";
 import SeventhHero from "../components/SeventhHero";
 import ConferenceInfo from "../components/ConferenceInfo";
+import SeventhSchedule from "../components/SeventhSchedule";
 import SeventhAbout from "../components/SeventhAbout";
 import Objectives from "../components/Objectives";
 import ParticipationRules from "../components/ParticipationRules";
@@ -42,6 +43,7 @@ export default function SeventhConferencePage() {
 			<main>
 				<SeventhHero />
 				<ConferenceInfo />
+				<SeventhSchedule />
 				<SeventhAbout />
 				<Objectives variant="seventh" />
 				<ParticipationRules variant="seventh" />
