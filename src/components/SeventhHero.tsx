@@ -63,7 +63,7 @@ export default function SeventhHero() {
 					initial={{ opacity: 0, y: 12 }}
 					animate={{ opacity: 1, y: 0 }}
 					transition={{ duration: 0.7, ease, delay: 0.1 }}
-					className="mb-3 max-w-2xl text-sm font-medium text-paper/85 sm:text-base"
+					className="mb-5 max-w-2xl text-sm font-medium leading-relaxed text-paper/85 sm:text-base"
 				>
 					{content.eyebrow}
 				</motion.p>
@@ -77,14 +77,19 @@ export default function SeventhHero() {
 					<span className="block text-paper">
 						{lang === "ar" ? (
 							<>
-								مؤتمر <span className="text-green-400">الإسلام حياة</span>
-								العلمي السابع الموسوم بـ
+								مؤتمر <span className="text-green-400">الإسلام حياة</span>{" "}
+								العلمي السابع
 							</>
 						) : (
 							content.editionTitle
 						)}
 					</span>
-					<span className="mt-2 block leading-[1.55] bg-gradient-to-r from-gold-300 via-gold-400 to-amber-200 bg-clip-text text-transparent">
+					{lang === "ar" && (
+						<span className="mt-4 block font-sans text-base font-medium leading-relaxed text-paper/80 sm:text-lg">
+							الموسوم بـ
+						</span>
+					)}
+					<span className="mt-2 block text-2xl leading-relaxed bg-gradient-to-r from-gold-300 via-gold-400 to-amber-200 bg-clip-text text-transparent sm:text-4xl">
 						«{content.themeTitle}»
 					</span>
 				</motion.h1>

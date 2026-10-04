@@ -9,7 +9,7 @@ import ParticipationRules from "../components/ParticipationRules";
 import Committees from "../components/Committees";
 import CallForPapers from "../components/CallForPapers";
 import FAQ from "../components/FAQ";
-import Sponsors from "../components/Sponsors";
+import SeventhSponsors from "../components/SeventhSponsors";
 import VenueSection from "../components/Venue";
 import Footer from "../components/Footer";
 import { useApp } from "../context/AppContext";
@@ -44,13 +44,13 @@ export default function SeventhConferencePage() {
 				<ConferenceInfo />
 				<SeventhAbout />
 				<Objectives variant="seventh" />
-				<ParticipationRules />
+				<ParticipationRules variant="seventh" />
 				<Committees />
 				<div className="mx-auto grid w-full max-w-7xl items-stretch gap-6 px-5 py-24 lg:grid-cols-2 lg:px-10 lg:py-32">
 					<FAQ />
 					<CallForPapers />
 				</div>
-				<Sponsors />
+				<SeventhSponsors />
 				<VenueSection />
 			</main>
 			<Footer />

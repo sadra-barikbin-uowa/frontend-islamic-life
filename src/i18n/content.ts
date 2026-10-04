@@ -43,13 +43,13 @@ export const content = {
     },
     seventhConference: {
       editionBadge: 'المؤتمر الدولي السابع — الدورة الحالية',
-      editionTitle: 'مؤتمر الإسلام حياة العلمي السابع الموسوم بـ',
+      editionTitle: 'مؤتمر الإسلام حياة العلمي السابع',
       themeTitle: 'الإعلام وصناعة الوعي الجمعي في تعزيز مبادئ الحكم الرشيد',
-      eyebrow: 'كلية العلوم الإسلامية — جامعة وارث الأنبياء (ع)',
+      eyebrow: 'برعاية العتبة الحسينية المقدسة، تقيم كلية العلوم الإسلامية / جامعة وارث الأنبياء المؤتمر السنوي',
       subtitle:
         'ضمن المسار العام لمؤتمر الإسلام حياة — ملتقى فكري وثقافي وأكاديمي يناقش قضايا الهوية والتعليم والمجتمع ، الإسلامي في مواجهة تحديات العصر، وبناء الإنسان وتنمية الحياة.',
       ctaPrimary: 'قدّم بحثك إلى المؤتمر الدولي السابع',
-      ctaRules: 'ضوابط المشاركة',
+      ctaRules: 'شروط استلام البحث',
       ctaCommittees: 'اللجان المشرفة',
       dateLine: '2026 – 1448 · كربلاء المقدسة، جامعة وارث الأنبياء (ع)',
       currentVersionBadge: 'النسخة السابعة',
@@ -58,7 +58,7 @@ export const content = {
         { id: 'seventh-hero', label: 'الرئيسية' },
         { id: 'about', label: 'عن الدورة السابعة' },
         { id: 'objectives', label: 'الأهداف' },
-        { id: 'rules', label: 'ضوابط المشاركة' },
+        { id: 'rules', label: 'شروط استلام البحث' },
         { id: 'committees', label: 'اللجان' },
         { id: 'cfp', label: 'تقديم البحث' },
         { id: 'faq', label: 'أسئلة عامة' },
@@ -69,11 +69,11 @@ export const content = {
       about: {
         vision: {
           title: 'الرؤية',
-          text: '',
+          text: 'يسعى المؤتمر لبحث الأدوار المعرفيّة والقيميّة للإعلام في صناعة الوعي الجمعيّ، واستثمارها في ترسيخ مبادئ الحكم الرشيد على وفق رؤية إسلاميّة معاصرة تسهم في بناء مجتمع واعٍ ومؤسّسات أكثر كفاءة وشفافيّة ومسؤوليّة.',
         },
         mission: {
           title: 'الرسالة',
-          text: '',
+          text: 'يسعى مؤتمر الإسلام حياة السابع الموسوم بـ «الإعلام وصناعة الوعي الجمعي في تعزيز مبادئ الحكم الرشيد» إلى بناء فضاءٍ علميٍّ معرفيٍّ رصين يبحث في دور الإعلام، بمختلف وسائطه وأشكاله المعاصرة، في تشكيل الوعي الجمعي وترسيخ القيم والمبادئ التي تسهم في بناء مجتمعٍ واعٍ ومسؤول، قادرٍ على المشاركة الإيجابية في صناعة القرار وتعزيز الثقة بالمؤسسات.',
         },
         goals: {
           title: 'الشعار',
@@ -83,7 +83,32 @@ export const content = {
       objectives: {
         title: 'أهداف المؤتمر',
         subtitle: 'أهداف علمية ومجتمعية تسهم في خدمة الإنسان والمجتمع وترسيخ القيم الإسلامية والإنسانية',
-        items: [],
+        items: [
+          { n: '01', title: 'تأصيل العلاقة', text: 'تأصيل العلاقة بين الإعلام والوعي الجمعيّ والحكم الرشيد في ضوء الرؤية الإسلاميّة والمقاربات العلميّة المعاصرة.' },
+          { n: '02', title: 'أثر وسائل الإعلام', text: 'بيان أثر وسائل الإعلام التقليديّة والرقميّة في تشكيل الوعي الجمعيّ وتوجيهه نحو ترسيخ قيم التشريعات والنظم الإسلاميّة.' },
+          { n: '03', title: 'الخطاب الإعلامي والحكم الرشيد', text: 'تحليل أثر الخطاب الإعلامي في دعم مبادئ الحكم الرشيد، وتعزيز المشاركة المجتمعيّة في صناعة القرار، ومراقبة الأداء المؤسّسي بما تقتضيه طبيعة المجتمعات الدينيّة عامّة والإسلاميّة خاصّة.' },
+          { n: '04', title: 'القيم الإسلامية في الإعلام', text: 'إبراز القيم الإسلاميّة الحاكمة على العمل الإعلاميّ وأثرها في بناء وعي مجتمعيّ رشيد يسهم في تحقيق العدالة والتنمية والاستقرار.' },
+          { n: '05', title: 'التحدّيات الإعلاميّة المعاصرة', text: 'دراسة التحدِّيات الإعلاميّة المعاصرة التي تؤثّر في تشكيل الوعي الجمعيّ وفق القيم الإنسانيّة، ولا سيّما التضليل الإعلاميّ، وخطاب الكراهيّة، وصناعة الرأي العام.' },
+          { n: '06', title: 'الإعلام الرقمي ومنصّات التواصل', text: 'تقييم أثر الإعلام الرقميّ ومنصّات التواصل الاجتماعيّ في بناء الوعي الجمعيّ وتوجيه السلوك المجتمعيّ الرشيد.' },
+          { n: '07', title: 'التكامل بين المؤسّسات', text: 'تعزيز التكامل بين المؤسّسات الإعلاميّة والأكاديميّة والدينيّة في إنتاج خطاب معرفيّ يسهم في ترسيخ ثقافة الحكم الرشيد.' },
+          { n: '08', title: 'استراتيجيّات بناء الوعي', text: 'استشراف الاستراتيجيّات الإعلاميّة الفاعلة في بناء الوعي المجتمعيّ الداعم للإصلاح المؤسّسي والتنمية المستدامة.' },
+          { n: '09', title: 'تطوير السياسات الإعلاميّة', text: 'تقديم رؤى وحلول علميّة لتطوير السياسات الإعلاميّة بما يعزّز الشفافيّة والمساءلة ومكافحة الفساد.' },
+          { n: '10', title: 'توصيات ومبادرات عمليّة', text: 'الخروج بتوصيات ومبادرات عمليّة تسهم في بناء الوعي الجمعيّ وتعزيز مبادئ الحكم الرشيد.' },
+        ],
+      },
+      requirements: {
+        title: 'شروط استلام البحث',
+        subtitle: 'يجب استيفاء الشروط الآتية عند تقديم البحث إلى المؤتمر',
+        items: [
+          'يجب أن يتضمّن البحث مقدّمة تحتوي على أهمّيّة البحث، ومشكلة البحث، وفرضية البحث، ومنهجيّة البحث.',
+          'يكتب متن البحث بخط Simplified Arabic بحجم 14.',
+          'تكتب الهوامش بطريقة تلقائيّة لا يدويّة، وتوضع أسفل كلّ صفحة من البحث، بخط Simplified Arabic بحجم 12.',
+          'يجب أن يتضمّن البحث خاتمة تحتوي على أهمّ النتائج والتوصيات بنقاط محدّدة.',
+          'ألا يقلّ البحث عن 15 صفحة (5250 كلمة)، ولا يزيد على 30 صفحة (10500 كلمة).',
+          'يشترط أن يتّسم البحث بالجدّة والأصالة العلميّة وفق شروط البحث العلميّ، بعيداً عن السرد الإنشائيّ.',
+          'ترفق مع البحث شهادة الاستلال الإلكترونيّ بكتاب رسمي من الجهة التي أصدرت التقرير، على أن تكون جامعة أو مركزاً علميّاً.',
+          'يشترط في البحث السلامة اللغويّة، معزّزة بتقرير المدقّق اللغويّ.',
+        ],
       },
     },
     hero: {
@@ -373,7 +398,7 @@ themeTitle: '« عنوانٌ استمدّ وجوده من سبل خدمة الد
       subtitle:
         'Part of the Islamic Life Conference series — an intellectual, cultural, and academic forum addressing identity, education, and Islamic society amid contemporary challenges.',
       ctaPrimary: 'Submit Paper for 7th Edition',
-      ctaRules: 'Participation Rules',
+      ctaRules: 'Paper Submission Requirements',
       ctaCommittees: 'Committees',
       dateLine: '2026 – 1448 AH · Karbala, Iraq · Warith Al-Anbiyaa University',
       currentVersionBadge: '7th Edition',
@@ -382,7 +407,7 @@ themeTitle: '« عنوانٌ استمدّ وجوده من سبل خدمة الد
         { id: 'seventh-hero', label: 'Home' },
         { id: 'about', label: 'About 7th Edition' },
         { id: 'objectives', label: 'Objectives' },
-        { id: 'rules', label: 'Rules' },
+        { id: 'rules', label: 'Submission Requirements' },
         { id: 'committees', label: 'Committees' },
         { id: 'cfp', label: 'Submit Paper' },
         { id: 'faq', label: 'FAQ' },
@@ -408,6 +433,20 @@ themeTitle: '« عنوانٌ استمدّ وجوده من سبل خدمة الد
         title: 'Conference Objectives',
         subtitle: 'Scholarly and social objectives that serve people and society while reinforcing Islamic and human values',
         items: [],
+      },
+      requirements: {
+        title: 'Paper Submission Requirements',
+        subtitle: 'Submitted papers must meet the following requirements',
+        items: [
+          'The paper must include an introduction stating its significance, research problem, hypothesis, and methodology.',
+          'The main text must use 14-point Simplified Arabic font.',
+          'Footnotes must be inserted automatically, not manually, and appear at the bottom of each page in 12-point Simplified Arabic font.',
+          'The conclusion must present the key findings and recommendations as clearly defined points.',
+          'The paper must be at least 15 pages (5,250 words) and no more than 30 pages (10,500 words).',
+          'The paper must demonstrate scholarly novelty and originality, follow academic research standards, and avoid discursive or unsupported prose.',
+          'The paper must include an electronic similarity report with an official letter from the issuing body, which must be a university or scientific center.',
+          'The paper must be linguistically sound and accompanied by a report from a language proofreader.',
+        ],
       },
     },
     hero: {
